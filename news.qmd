@@ -1,0 +1,16 @@
+---
+title: "News"
+---
+
+<!-- Machinery. Edit _content/news.yml instead of this file. -->
+
+```{r}
+#| include: false
+source("_helpers.R")
+```
+
+```{r}
+#| echo: false
+#| output: asis
+news_block()
+```

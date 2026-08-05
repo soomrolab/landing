@@ -1,0 +1,15 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  fields: [date, title, description, categories]
+  date-format: "MMM D, YYYY"
+  feed: true
+  page-size: 20
+---
+
+<!-- This page lists everything in blog/posts/ automatically.
+     To publish, drop a new .qmd or .md file into that folder. -->

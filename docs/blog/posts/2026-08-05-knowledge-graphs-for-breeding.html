@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tayab Soomro">
+<meta name="dcterms.date" content="2026-08-05">
+<meta name="description" content="Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks.">
 
-<title>Join the lab – Soomro Lab</title>
+<title>Breeding data is a graph. We should probably store it that way. – Soomro Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-18eeef7e313107c10b6b051a6734352e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54711d67d5996e08263c3e0d81db8ddc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-18eeef7e313107c10b6b051a6734352e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-54711d67d5996e08263c3e0d81db8ddc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,19 +76,15 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<meta property="og:title" content="Join the lab – Soomro Lab">
-<meta property="og:description" content="Bioinformatics for plant breeding at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre.">
-<meta property="og:image" content="https://soomrolab.com/images/og-image.png">
+<meta property="og:title" content="Breeding data is a graph. We should probably store it that way. – Soomro Lab">
+<meta property="og:description" content="Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks.">
+<meta property="og:image" content="https://soomrolab.com/blog/posts/images/og-image.png">
 <meta property="og:site_name" content="Soomro Lab">
 <meta property="og:locale" content="en_CA">
-<meta property="og:image:height" content="630">
-<meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Join the lab – Soomro Lab">
-<meta name="twitter:description" content="Bioinformatics for plant breeding at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre.">
-<meta name="twitter:image" content="https://soomrolab.com/images/og-image.png">
+<meta name="twitter:title" content="Breeding data is a graph. We should probably store it that way. – Soomro Lab">
+<meta name="twitter:description" content="Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks.">
+<meta name="twitter:image" content="https://soomrolab.com/blog/posts/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="630">
-<meta name="twitter:image-width" content="1200">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -95,11 +94,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.svg" alt="Soomro Lab" class="navbar-logo light-content">
-    <img src="./images/logo.svg" alt="Soomro Lab" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.svg" alt="Soomro Lab" class="navbar-logo light-content">
+    <img src="../../images/logo.svg" alt="Soomro Lab" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Soomro Lab</span>
     </a>
   </div>
@@ -110,27 +109,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../../people.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./join.html" aria-current="page"> 
+    <a class="nav-link" href="../../join.html"> 
 <span class="menu-text">Work with us</span></a>
   </li>  
 </ul>
@@ -141,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./blog/index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
+    <a class="nav-link" href="../../blog/index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -167,14 +166,35 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Join the lab</h1>
-</div>
+<h1 class="title">Breeding data is a graph. We should probably store it that way.</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">breeding informatics</div>
+    <div class="quarto-category">knowledge graphs</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tayab Soomro </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 5, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -184,25 +204,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- Machinery. Edit _content/join.yml instead of this file. -->
-<p>The lab sits inside a federal research centre rather than a university department, which changes the shape of what is on offer: no graduate admissions of our own, but real projects, real breeding programs, and data that has consequences for what gets planted.</p>
-<section id="students" class="level2">
-<h2 data-anchor-id="students">Students</h2>
-<p>We take undergraduate co-op students, summer students and honours projects, and co-supervise graduate students with university supervisors. Past projects have run from pedigree visualisation to genomic selection pipelines to real-time nanopore analysis.</p>
-<p>You do not need a genomics background. You do need to be comfortable writing code, or willing to become comfortable quickly — most of what we do is programming applied to biological questions, and we will teach the biology.</p>
-</section>
-<section id="breeders-and-research-scientists" class="level2">
-<h2 data-anchor-id="breeders-and-research-scientists">Breeders and research scientists</h2>
-<p>If you have a data problem — a pipeline that only runs on one person’s laptop, a genotype file you cannot join to your field book, an analysis you would rather run yourself — that is the core of the job, not a favour. Get in touch early rather than after the data is collected; the design decisions that make analysis easy are usually made before anything is sequenced.</p>
-</section>
-<section id="collaborations" class="level2">
-<h2 data-anchor-id="collaborations">Collaborations</h2>
-<p>We work with groups across AAFC, universities and industry on diagnostics, population genomics and breeding informatics. If your problem sits somewhere between genomics and software engineering, that is generally where we are most useful.</p>
 <div class="panel">
-<p><strong>Getting in touch</strong></p>
-<p>Email <a href="mailto:tayab.soomro@agr.gc.ca" class="email">tayab.soomro@agr.gc.ca</a>. For student enquiries, say what you want to work on and roughly when you are available — the CV can wait until the second email. For project enquiries, one paragraph on the biological question and one on what data exists is enough to start.</p>
+<p><strong>Draft.</strong> This post was assembled from an internal memo and has not been reviewed for public release. Edit or delete it before publishing the site.</p>
 </div>
-<p>We are glad to hear from people whose route into computational work was not the standard one. If a formal requirement looks like a barrier, say so — it is often negotiable.</p>
+<p>In most breeding programs, information lives in disconnected systems. Pedigrees sit in one database, genotypes in another, field notes in spreadsheets, environmental data somewhere else again. Each system is fine on its own terms. The problem shows up the moment a question spans two of them.</p>
+<p>Ask something like <em>which high-yielding lines carry a particular haplotype while still keeping enough genetic diversity from the rest of the program?</em> and you are looking at a manual joining exercise — export, match on line IDs that were entered slightly differently in each system, reconcile, repeat. It is doable. It is also expensive enough that most questions of that shape simply never get asked, which is the real cost.</p>
+<section id="modelling-the-relationships-instead-of-the-tables" class="level2">
+<h2 data-anchor-id="modelling-the-relationships-instead-of-the-tables">Modelling the relationships instead of the tables</h2>
+<p>A knowledge graph takes a different starting point. Rather than storing tables and joining them later, you model the entities that actually exist in a breeding program — lines, parents, markers, haplotypes, environments, traits — and store the relationships between them directly. <em>This line has this parent. This parent carries this marker. This marker sits in this haplotype. This haplotype was scored in this environment.</em></p>
+<p>Once the relationships are the primary object, traversing them is a query rather than a project. The question above becomes something you type.</p>
+</section>
+<section id="what-it-looks-like-in-practice" class="level2">
+<h2 data-anchor-id="what-it-looks-like-in-practice">What it looks like in practice</h2>
+<p>A few groups have already built interfaces worth clicking through:</p>
+<ul>
+<li><a href="https://helium.hutton.ac.uk/#/">Helium</a>, James Hutton Institute</li>
+<li><a href="https://bioinformatics.cragenomica.es/perseus/home">PERSEUS</a>, CRAG</li>
+<li><a href="https://tgil.donga.ac.kr/SoyPedi/index.html">SoyPedi</a>, a digitised soybean pedigree interface</li>
+</ul>
+<p>Helium and PERSEUS both let you pan around a crop pedigree and colour it by trait, so you can watch a trait move through the crosses. For wheat that is a useful visual validation: we select parents for particular traits, and this lets us confirm the traits actually carried through. KASP marker calls can be colour-coded onto the same pedigree and overlaid with the phenotype data, which is a quick way to check whether a marker is genuinely driving a trait or just travelling near it.</p>
+<p>That is a back-of-the-napkin example, but it is the kind of thing that comes up weekly.</p>
+</section>
+<section id="the-longer-arc" class="level2">
+<h2 data-anchor-id="the-longer-arc">The longer arc</h2>
+<p>The payoff grows as phenotyping gets cheaper. Automated, high-throughput phenotyping in the trial plots captures trait data at much finer granularity with less manual labour, which means more statistical power to detect genomic associations. That data has to land somewhere that can hold it alongside everything else.</p>
+<p>Further out, the same integrated structure is the groundwork for a digital twin of a breeding program: a computational model connecting genomics, pedigree, environment and field performance closely enough to evaluate candidate crosses before growing them all out. That is a long horizon. The graph is the first step, and it is useful well before you get there.</p>
+</section>
+<section id="where-we-are" class="level2">
+<h2 data-anchor-id="where-we-are">Where we are</h2>
+<p>We are building a pedigree tool for wheat along these lines, and running a QTL analysis on a bi-parental wheat population as a near-term application — tracing which markers were passed down to the two parents, then asking which progeny carry both the markers and the associated traits.</p>
+<p>More when there is something to show.</p>
 
 
 </section>
@@ -613,7 +644,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Soomro Lab · <a href="https://agriculture.canada.ca/en/science/agriculture-and-agri-food-research-centres/brandon-research-and-development-centre">Brandon Research and Development Centre</a> · Agriculture and Agri-Food Canada</p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="./news.html">News</a> · <a href="./about.html">Tayab Soomro</a> · <a href="blog/index.xml">RSS</a></p>
+<p><a href="news.qmd">News</a> · <a href="about.qmd">Tayab Soomro</a> · <a href="blog/index.xml">RSS</a></p>
 </div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org">Quarto</a></p>
@@ -624,5 +655,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

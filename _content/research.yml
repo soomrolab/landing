@@ -1,0 +1,94 @@
+# ── Research page ────────────────────────────────────────────────
+title: "Research"
+
+intro:
+  - "Four threads, one problem. A breeding program generates enormous
+     amounts of information — pedigree, genotype, phenotype, environment,
+     disease pressure — and then struggles to ask questions that cross
+     more than one of those categories at a time. Everything below is an
+     attempt to make one of those crossings cheap."
+
+themes:
+  - title: "Connected breeding data"
+    body: |
+      In most breeding programs information lives in disconnected systems:
+      pedigrees in one database, genotypes in another, field notes in
+      spreadsheets, environmental data somewhere else again. Any question
+      spanning two of them becomes a manual joining exercise, which means
+      most such questions never get asked.
+
+      We model breeding data as a graph instead — lines, parents, markers,
+      haplotypes, environments and traits as entities, with the
+      relationships between them stored explicitly and queried directly.
+      That turns *which high-yielding lines carry this haplotype while
+      still retaining diversity from the rest of the program?* into a query
+      rather than a week of work.
+
+      The first application is pedigree visualisation for wheat: panning
+      through a crop pedigree coloured by trait, so you can see how a trait
+      moves through a set of crosses, overlay KASP marker calls, and check
+      whether a marker is genuinely driving the phenotype or merely
+      travelling near it. Further out, the same integrated data is the
+      groundwork for a digital twin of a breeding program — a model
+      connecting genomics, pedigree, environment and field performance
+      well enough to evaluate candidate crosses before growing them out.
+
+  - title: "Diagnostics that run where the crop is"
+    body: |
+      Conventional pathogen testing means shipping a sample to a lab and
+      waiting days for an answer. By the time it arrives the decision has
+      usually been made without it, often as a broad fungicide application.
+
+      We work on collapsing that loop with portable nanopore sequencing.
+      **nanoCAS** is an event-driven framework that watches a sequencing
+      run as it happens and makes detection calls in real time, rather than
+      waiting for the run to finish and the analysis to be queued. Paired
+      with the Mk1C, that puts a sequencing-grade diagnostic in a truck.
+
+      Targets so far span plant and animal systems: *Sclerotinia
+      sclerotiorum* in canola, *Xylella fastidiosa* in grapevine,
+      *Brucella abortus* in cattle and *Mycoplasma ovipneumoniae* in sheep.
+
+  - title: "Trait discovery and population genomics"
+    body: |
+      The support side of the lab and the innovation side meet here. We run
+      genome-wide association studies in *Vicia faba* populations for rust
+      resistance and heat tolerance, and QTL analysis in bi-parental wheat
+      populations — using the pedigree to trace which markers came down
+      from which parent, then asking which progeny carry both the markers
+      and the trait.
+
+      We also contribute to comparative genomics of *Aphanomyces
+      euteiches*, the root rot pathogen of pulse crops, where better
+      annotation is the prerequisite for understanding pathogenicity and
+      host resistance.
+
+  - title: "Pipelines people can run without us"
+    body: |
+      A bioinformatics group becomes a bottleneck the moment every analysis
+      has to pass through it. So a standing goal is to build pipelines that
+      are atomic, independently runnable and documented well enough that
+      someone can pick one up without handholding.
+
+      The working proof is a genomic selection pipeline that any member of
+      the barley breeding program can now run with minimal training. The
+      same approach is being extended across the Brandon and Morden
+      bioinformatics groups so that discrete, well-specified tasks can move
+      to whoever has capacity — and so that routine analysis stops
+      competing with new work for the same hours.
+
+software_heading: "Software"
+software:
+  # Check these URLs before publishing — some repos may have moved.
+  - name: "nanoCAS"
+    url: "https://github.com/tayabsoomro"
+    description: "event-driven framework for real-time detection during nanopore sequencing"
+  - name: "MICAS"
+    url: "https://github.com/coadunate/MICAS"
+    description: "MinION classification and alerting system"
+  - name: "genoassist"
+    url: "https://github.com/genoassist/genoassist"
+    description: "genome assembly and annotation framework that compares assemblies so you can pick the best one"
+  - name: "BiocSwirl"
+    url: "https://github.com/tayabsoomro"
+    description: "interactive R/Bioconductor courses for teaching bioinformatics workflows"

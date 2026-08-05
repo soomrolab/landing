@@ -1,60 +1,38 @@
 ---
-title: "People"
+title: "Team"
 ---
 
-[Principal investigator]{.eyebrow}
+<!-- Machinery. Edit _content/people.yml instead of this file. -->
 
-::: {.people}
+```{r}
+#| include: false
+source("_helpers.R")
+cfg    <- read_data("settings.yml")$people
+people <- read_data("people.yml")
+has    <- function(g) length(Filter(function(p) identical(p$group, g), people)) > 0
+```
 
-::: {.person}
-<!-- Swap the div below for: ![](images/people/soomro.jpg) -->
-::: {.headshot}
-:::
-[[First] Soomro]{.name}  
-[Principal Investigator]{.role}  
-[[Email](mailto:you@university.edu) &middot; [Scholar](https://scholar.google.com) &middot; [CV](cv.pdf)]{.subtle}
-:::
+```{r}
+#| echo: false
+#| output: asis
+eyebrow(cfg$pi_heading %||% "Lead")
+people_block(group = "pi")
 
-:::
+if (has("member")) {
+  eyebrow(cfg$members_heading %||% "Team")
+  people_block(group = "member")
+}
 
-[Members]{.eyebrow}
+if (has("alumni")) {
+  rule()
+  eyebrow(cfg$alumni_heading %||% "Alumni")
+  alumni_block()
+}
 
-::: {.people}
-
-::: {.person}
-::: {.headshot}
-:::
-[[Name]]{.name}  
-[Postdoctoral Fellow]{.role}
-:::
-
-::: {.person}
-::: {.headshot}
-:::
-[[Name]]{.name}  
-[PhD Student]{.role}
-:::
-
-::: {.person}
-::: {.headshot}
-:::
-[[Name]]{.name}  
-[PhD Student]{.role}
-:::
-
-::: {.person}
-::: {.headshot}
-:::
-[[Name]]{.name}  
-[Research Assistant]{.role}
-:::
-
-:::
-
----
-
-[Alumni]{.eyebrow}
-
-**[Name]** — PhD 2025. Now [current position, institution].
-
-**[Name]** — MSc 2024. Now [current position, institution].
+if (has("collaborator")) {
+  rule()
+  eyebrow(cfg$collaborators_heading %||% "Collaborators")
+  emit(cfg$collaborators_intro)
+  collaborators_block()
+}
+```

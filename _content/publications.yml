@@ -1,0 +1,34 @@
+# ── Publications ─────────────────────────────────────────────────
+# Grouped and sorted by `year` automatically, newest first.
+# Surnames listed under `highlight` in settings.yml get bolded.
+
+- year: 2025
+  authors: "Soomro T, Horovatin S, Dumonceaux TJ, Links MG"
+  title: "nanoCAS: a web platform for nanopore-based point-of-care diagnostics."
+  venue: "In preparation, BMC Bioinformatics."
+
+- year: 2023
+  authors: "Soomro T, Jordan M, Watts S, Migicovsky Z, Forney C, Song J, Myles S"
+  title: "Genomic insights into apple aroma diversity."
+  venue: "Fruit Research."
+  links:
+    DOI: "https://doi.org/10.48130/FruRes-2023-0027"
+
+- year: 2023
+  authors: "Obshta O, Zabrodski MW, Soomro T, Wilson G, Masood F, Thebeau J, Silva MCB, Biganski S, Kozii IV, Koziy RV, Raza MF, Jose MS, Simko E, Wood SC"
+  title: "Oxytetracycline-resistant *Paenibacillus larvae* identified in commercial beekeeping operations in Saskatchewan using pooled honey sampling."
+  venue: "Journal of Veterinary Diagnostic Investigation."
+  links:
+    DOI: "https://doi.org/10.1177/10406387231200178"
+
+- year: 2023
+  authors: "Soomro T, Done EC, Tetland EG"
+  title: "Portable crop disease diagnostic solution."
+  venue: "U.S. Provisional Patent Application No. 63/614,174, filed 22 December 2023."
+
+- year: 2022
+  authors: "Soomro T, Watts S, Migicovsky Z, Myles S"
+  title: "Cider and dessert apples: what's the difference?"
+  venue: "Plants, People, Planet."
+  links:
+    DOI: "https://doi.org/10.1002/ppp3.10284"

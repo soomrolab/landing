@@ -1,0 +1,54 @@
+---
+title: "Tayab Soomro"
+---
+
+<!-- Machinery. Edit _content/about.yml instead of this file. -->
+
+```{r}
+#| include: false
+source("_helpers.R")
+a <- read_data("about.yml")
+```
+
+```{r}
+#| echo: false
+#| output: asis
+if (!is.null(a$role)) cat("[", a$role, "]{.eyebrow}\n\n", sep = "")
+emit(a$intro)
+
+if (length(a$positions)) {
+  rule()
+  eyebrow(a$positions_heading %||% "Positions")
+  timeline_block(a$positions)
+}
+
+if (length(a$education)) {
+  rule()
+  eyebrow(a$education_heading %||% "Education")
+  timeline_block(a$education)
+}
+
+if (length(a$ventures)) {
+  rule()
+  eyebrow(a$ventures_heading %||% "Beyond the lab")
+  listing_block(a$ventures)
+}
+
+if (length(a$awards)) {
+  rule()
+  eyebrow(a$awards_heading %||% "Grants and awards")
+  listing_block(a$awards)
+}
+
+if (length(a$media)) {
+  rule()
+  eyebrow(a$media_heading %||% "Selected press")
+  media_block(a$media)
+}
+
+if (length(a$elsewhere)) {
+  rule()
+  eyebrow(a$elsewhere_heading %||% "Elsewhere")
+  cat(link_row(a$elsewhere), "\n\n")
+}
+```

@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-18eeef7e313107c10b6b051a6734352e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-67d4615ff25e9bdb04c8595d67e51953.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-54711d67d5996e08263c3e0d81db8ddc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,8 +74,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Soomro Lab">
-<meta property="og:description" content="Research group website.">
+<meta property="og:description" content="Bioinformatics for plant breeding at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre.">
+<meta property="og:image" content="https://soomrolab.com/images/og-image.png">
 <meta property="og:site_name" content="Soomro Lab">
+<meta property="og:locale" content="en_CA">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+<meta name="twitter:title" content="Soomro Lab">
+<meta name="twitter:description" content="Bioinformatics for plant breeding at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre.">
+<meta name="twitter:image" content="https://soomrolab.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="630">
+<meta name="twitter:image-width" content="1200">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -84,6 +95,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo.svg" alt="Soomro Lab" class="navbar-logo light-content">
+    <img src="./images/logo.svg" alt="Soomro Lab" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Soomro Lab</span>
     </a>
@@ -99,26 +114,39 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./software.html"> 
+<span class="menu-text">Software</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./people.html"> 
-<span class="menu-text">People</span></a>
+<span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./blog/index.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./join.html"> 
-<span class="menu-text">Join</span></a>
+<span class="menu-text">Work with us</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/YOUR-GITHUB-USERNAME"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/tayabsoomro"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:you@university.edu"> <i class="bi bi-envelope" role="img" aria-label="Email">
+    <a class="nav-link" href="./blog/index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:tayab.soomro@agr.gc.ca"> <i class="bi bi-envelope" role="img" aria-label="Email">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -140,34 +168,57 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><span class="eyebrow">Soomro Lab · [University]</span></p>
+<!-- Machinery. Edit _content/home.yml instead of this file. -->
+<p><span class="eyebrow">Soomro Lab · Brandon Research and Development Centre · Agriculture and Agri-Food Canada</span></p>
 <div class="lede">
-<p>We study <span style="border-bottom:2px solid #2f6a5c;">the one-sentence question your lab exists to answer</span> — and build the tools needed to answer it.</p>
+<p>Breeding programs are rarely limited by biology. They are limited by <span class="accent">the distance between the data they collect and the decisions they make</span>.</p>
 </div>
-<p>The lab combines [approach one] and [approach two] to understand [system or problem]. We work at the interface of [field A] and [field B], and most of what we build is released openly.</p>
-<p>We are based in the [Department] at [University], in [City].</p>
+<p>We are the bioinformatics group at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre. We support breeders and research scientists with genomics and computational biology, and we build the tools that shorten that distance: connected breeding data, diagnostics that run in the field, and analysis pipelines that do not need a bioinformatician standing beside them.</p>
+<p>The motivation is not abstract. Weather is getting less predictable faster than variety development cycles can absorb, and the crops going into the ground now have to survive conditions nobody bred them for. Breeding is how agriculture adapts. Our job is to remove whatever is slowing it down.</p>
+<p>The lab is not crop-specific. The bottlenecks — disconnected data, slow diagnostics, unclear marker–trait relationships, analysis queued behind one person — recur across wheat, barley, oat, canola and pulses, and the tools are built to travel.</p>
+<p>The lab is led by <a href="./about.html">Tayab Soomro</a>. Most of what we build is <a href="./software.html">released openly</a>.</p>
 <hr>
 <p><span class="eyebrow">Recent</span></p>
 <div class="news">
 <div class="item">
-<p><span class="date">Jun 2026</span> New preprint on [topic] is <a href="https://example.com">online</a>.</p>
+<p><span class="date">May 2026</span></p>
+<p>Poster at the Canadian Phytopathological Society annual meeting, Halifax: <em>Breaking the cycle — collaborative approaches to fusarium head blight in barley breeding</em>, with Badea, Tucker and colleagues.</p>
 </div>
 <div class="item">
-<p><span class="date">May 2026</span> [Name] joins the lab as a PhD student. Welcome!</p>
+<p><span class="date">Mar 2026</span></p>
+<p>nanoCAS presented at <a href="https://nanoporetech.com/about/events/conferences/london-calling-2026">London Calling 2026</a>: an event-driven framework for real-time detection and decision making during nanopore sequencing.</p>
 </div>
 <div class="item">
-<p><span class="date">Mar 2026</span> [Paper title] accepted at [venue].</p>
+<p><span class="date">Feb 2026</span></p>
+<p>BRDC Science Seminar: <em>The Bioinfomagician — modernizing Brandon’s breeding and genomics pipelines</em>.</p>
+</div>
+<div class="item">
+<p><span class="date">Nov 2025</span></p>
+<p><a href="https://datainnovation.org/2025/11/5-qs-with-tayab-soomro-co-founder-of-pathoscan/">Five questions on PathoScan</a> with the Center for Data Innovation.</p>
+</div>
+<div class="item">
+<p><span class="date">Oct 2025</span></p>
+<p>Canada Foundation for Innovation profile: <a href="https://www.innovation.ca/projects-results/current-topics-research-funding/agriculture-agrifood-innovation">building prosperity by ensuring food security</a>.</p>
 </div>
 </div>
-<p class="subtle" style="margin-top:1.25rem;">
-<a href="./publications.html">See all publications →</a>
-</p>
+<p><span class="subtle"><a href="./news.html">All updates →</a></span></p>
+<hr>
+<p><span class="eyebrow">Notes</span></p>
+<div class="news">
+<div class="item">
+<p><span class="date">Aug 2026</span></p>
+<p><a href="./blog/posts/2026-08-05-knowledge-graphs-for-breeding.html">Breeding data is a graph. We should probably store it that way.</a> — <span class="subtle">Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks.</span></p>
+</div>
+</div>
+<p><span class="subtle"><a href="./blog/index.html">All posts →</a></span></p>
 <hr>
 <p><span class="eyebrow">Contact</span></p>
-<p>[Department], [University]<br>
-[Street address], [City], [Postal code]</p>
-<p><a href="mailto:you@university.edu" class="email">you@university.edu</a></p>
-<p>Prospective students and postdocs: please read <a href="./join.html">Join the lab</a> first.</p>
+<p>Brandon Research and Development Centre<br>
+Agriculture and Agri-Food Canada<br>
+2701 Grand Valley Road, P.O. Box 1000A<br>
+Brandon, Manitoba, R7A 5Y3</p>
+<p><a href="mailto:tayab.soomro@agr.gc.ca" class="email">tayab.soomro@agr.gc.ca</a></p>
+<p>Students, collaborators and breeding programs with a data problem: see <a href="./join.html">Work with us</a>.</p>
 
 
 
@@ -574,11 +625,11 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Soomro Lab · [Department] · [University]</p>
+<p>Soomro Lab · <a href="https://agriculture.canada.ca/en/science/agriculture-and-agri-food-research-centres/brandon-research-and-development-centre">Brandon Research and Development Centre</a> · Agriculture and Agri-Food Canada</p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
+<p><a href="./news.html">News</a> · <a href="./about.html">Tayab Soomro</a> · <a href="blog/index.xml">RSS</a></p>
+</div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org">Quarto</a></p>
 </div>

@@ -1,0 +1,63 @@
+# ── Posters and invited talks ────────────────────────────────────
+# Rendered below the papers on the Publications page.
+# Sorted by year, newest first.
+
+posters:
+  - year: 2026
+    text: "Badea A, Taylor KR, **Soomro T**, McGonigle TP, Wang X, MacEachern D,
+           Khanal R, Blackwell BA, Sura S, Foroud NA, Weerasinghe V, Embrador D,
+           Quill Z, Wijekoon C, Fernando WGD, Walkowiak S, Tucker JR.
+           *Breaking the cycle: innovative collaborative approaches to fusarium
+           head blight in barley breeding.* Canadian Phytopathological Society
+           Annual Meeting, Halifax, NS."
+
+  - year: 2026
+    text: "**Soomro T**, Horovatin S, Dumonceaux TJ, Links MG.
+           *nanoCAS: an event-driven framework for real-time detection and
+           decision making during nanopore sequencing.* London Calling,
+           London, UK."
+
+  - year: 2025
+    text: "**Soomro T**, Horovatin S, Dumonceaux TJ, Links MG.
+           *nanoCAS: web platform for nanopore-based point-of-care
+           diagnostics.* BioNet, Calgary, AB."
+
+  - year: 2021
+    text: "**Soomro T**, Jordan M, Watts S, Migicovsky Z, Forney C, Song J,
+           Myles S. *Harvest date shapes apple volatilome.* Plant and Animal
+           Genomes Conference, San Diego, CA."
+
+  - year: 2020
+    text: "**Soomro T**, Napper S, Bonham-Smith PC. *Investigation of the
+           Arabidopsis thaliana kinome after infection with Plasmodiophora
+           brassicae and establishment of clubroot.* American Association for
+           the Advancement of Science, Seattle, WA."
+
+  - year: 2018
+    text: "**Soomro T**, Links MG. *Sequence and forget: a new paradigm for
+           MinION DNA sequencing.* Research Fest, Department of Computer
+           Science, University of Saskatchewan."
+
+talks:
+  - year: 2026
+    text: "*The Bioinfomagician: modernizing Brandon's breeding and genomics
+           pipelines.* BRDC Science Seminar."
+
+  - year: 2025
+    text: "*nanoCAS: web platform for nanopore-based point-of-care
+           diagnostics.* BioNet Conference."
+
+  - year: 2024
+    text: "[*How data is used in agriculture.*](https://www.youtube.com/watch?v=KPBhK0f1UtA)
+           Data For Good Saskatchewan."
+
+  - year: 2023
+    text: "*Breaking the wall of diagnostic roadblocks.* Falling Walls Lab
+           Atlantic Canada."
+
+  - year: 2022
+    text: "*The genetics of apple aroma.* UC Davis Plant Sciences Symposium."
+
+  - year: 2022
+    text: "*Introduction to pan-genomes and how to create one.* Institute for
+           Comparative Genomics, Dalhousie University."

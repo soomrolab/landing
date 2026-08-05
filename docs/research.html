@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-18eeef7e313107c10b6b051a6734352e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-67d4615ff25e9bdb04c8595d67e51953.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-54711d67d5996e08263c3e0d81db8ddc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,8 +74,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Research – Soomro Lab">
-<meta property="og:description" content="Research group website.">
+<meta property="og:description" content="Bioinformatics for plant breeding at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre.">
+<meta property="og:image" content="https://soomrolab.com/images/og-image.png">
 <meta property="og:site_name" content="Soomro Lab">
+<meta property="og:locale" content="en_CA">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+<meta name="twitter:title" content="Research – Soomro Lab">
+<meta name="twitter:description" content="Bioinformatics for plant breeding at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre.">
+<meta name="twitter:image" content="https://soomrolab.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="630">
+<meta name="twitter:image-width" content="1200">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -84,6 +95,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo.svg" alt="Soomro Lab" class="navbar-logo light-content">
+    <img src="./images/logo.svg" alt="Soomro Lab" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Soomro Lab</span>
     </a>
@@ -99,26 +114,39 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./software.html"> 
+<span class="menu-text">Software</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./people.html"> 
-<span class="menu-text">People</span></a>
+<span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./blog/index.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./join.html"> 
-<span class="menu-text">Join</span></a>
+<span class="menu-text">Work with us</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/YOUR-GITHUB-USERNAME"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/tayabsoomro"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:you@university.edu"> <i class="bi bi-envelope" role="img" aria-label="Email">
+    <a class="nav-link" href="./blog/index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:tayab.soomro@agr.gc.ca"> <i class="bi bi-envelope" role="img" aria-label="Email">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -156,26 +184,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><span class="eyebrow">Overview</span></p>
-<p>A short paragraph framing the whole programme: the gap in the field, why it matters now, and the through-line connecting the themes below. Two or three sentences is plenty — the detail belongs in the sections.</p>
-<section id="theme-one" class="level2">
-<h2 data-anchor-id="theme-one">Theme one</h2>
-<p>What the question is, in plain language. What you actually do about it — the system, the data, the method. What has come out of it so far, with links to the relevant papers or software.</p>
-<p>Funded by [funder]. See <a href="./publications.html">Author et al.&nbsp;2026</a>.</p>
+<!-- Machinery. Edit _content/research.yml instead of this file. -->
+<p>Four threads, one problem. A breeding program generates enormous amounts of information — pedigree, genotype, phenotype, environment, disease pressure — and then struggles to ask questions that cross more than one of those categories at a time. Everything below is an attempt to make one of those crossings cheap.</p>
+<section id="connected-breeding-data" class="level2">
+<h2 data-anchor-id="connected-breeding-data">Connected breeding data</h2>
+<p>In most breeding programs information lives in disconnected systems: pedigrees in one database, genotypes in another, field notes in spreadsheets, environmental data somewhere else again. Any question spanning two of them becomes a manual joining exercise, which means most such questions never get asked.</p>
+<p>We model breeding data as a graph instead — lines, parents, markers, haplotypes, environments and traits as entities, with the relationships between them stored explicitly and queried directly. That turns <em>which high-yielding lines carry this haplotype while still retaining diversity from the rest of the program?</em> into a query rather than a week of work.</p>
+<p>The first application is pedigree visualisation for wheat: panning through a crop pedigree coloured by trait, so you can see how a trait moves through a set of crosses, overlay KASP marker calls, and check whether a marker is genuinely driving the phenotype or merely travelling near it. Further out, the same integrated data is the groundwork for a digital twin of a breeding program — a model connecting genomics, pedigree, environment and field performance well enough to evaluate candidate crosses before growing them out.</p>
 </section>
-<section id="theme-two" class="level2">
-<h2 data-anchor-id="theme-two">Theme two</h2>
-<p>Same shape. Keep each theme to one screen; anyone who wants more will read the papers.</p>
+<section id="diagnostics-that-run-where-the-crop-is" class="level2">
+<h2 data-anchor-id="diagnostics-that-run-where-the-crop-is">Diagnostics that run where the crop is</h2>
+<p>Conventional pathogen testing means shipping a sample to a lab and waiting days for an answer. By the time it arrives the decision has usually been made without it, often as a broad fungicide application.</p>
+<p>We work on collapsing that loop with portable nanopore sequencing. <strong>nanoCAS</strong> is an event-driven framework that watches a sequencing run as it happens and makes detection calls in real time, rather than waiting for the run to finish and the analysis to be queued. Paired with the Mk1C, that puts a sequencing-grade diagnostic in a truck.</p>
+<p>Targets so far span plant and animal systems: <em>Sclerotinia sclerotiorum</em> in canola, <em>Xylella fastidiosa</em> in grapevine, <em>Brucella abortus</em> in cattle and <em>Mycoplasma ovipneumoniae</em> in sheep.</p>
 </section>
-<section id="theme-three" class="level2">
-<h2 data-anchor-id="theme-three">Theme three</h2>
-<p>Same shape.</p>
+<section id="trait-discovery-and-population-genomics" class="level2">
+<h2 data-anchor-id="trait-discovery-and-population-genomics">Trait discovery and population genomics</h2>
+<p>The support side of the lab and the innovation side meet here. We run genome-wide association studies in <em>Vicia faba</em> populations for rust resistance and heat tolerance, and QTL analysis in bi-parental wheat populations — using the pedigree to trace which markers came down from which parent, then asking which progeny carry both the markers and the trait.</p>
+<p>We also contribute to comparative genomics of <em>Aphanomyces euteiches</em>, the root rot pathogen of pulse crops, where better annotation is the prerequisite for understanding pathogenicity and host resistance.</p>
+</section>
+<section id="pipelines-people-can-run-without-us" class="level2">
+<h2 data-anchor-id="pipelines-people-can-run-without-us">Pipelines people can run without us</h2>
+<p>A bioinformatics group becomes a bottleneck the moment every analysis has to pass through it. So a standing goal is to build pipelines that are atomic, independently runnable and documented well enough that someone can pick one up without handholding.</p>
+<p>The working proof is a genomic selection pipeline that any member of the barley breeding program can now run with minimal training. The same approach is being extended across the Brandon and Morden bioinformatics groups so that discrete, well-specified tasks can move to whoever has capacity — and so that routine analysis stops competing with new work for the same hours.</p>
 <hr>
 <p><span class="eyebrow">Software</span></p>
-<p>Tools the lab maintains, with a one-line description of what each one is for.</p>
 <ul>
-<li><strong><a href="https://github.com/YOUR-GITHUB-USERNAME/toolname">toolname</a></strong> — what it does, in one line.</li>
-<li><strong><a href="https://github.com/YOUR-GITHUB-USERNAME/toolname">toolname</a></strong> — what it does, in one line.</li>
+<li><strong><a href="https://github.com/tayabsoomro">nanoCAS</a></strong> — event-driven framework for real-time detection during nanopore sequencing</li>
+<li><strong><a href="https://github.com/coadunate/MICAS">MICAS</a></strong> — MinION classification and alerting system</li>
+<li><strong><a href="https://github.com/genoassist/genoassist">genoassist</a></strong> — genome assembly and annotation framework that compares assemblies so you can pick the best one</li>
+<li><strong><a href="https://github.com/tayabsoomro">BiocSwirl</a></strong> — interactive R/Bioconductor courses for teaching bioinformatics workflows</li>
 </ul>
 
 
@@ -584,11 +622,11 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Soomro Lab · [Department] · [University]</p>
+<p>Soomro Lab · <a href="https://agriculture.canada.ca/en/science/agriculture-and-agri-food-research-centres/brandon-research-and-development-centre">Brandon Research and Development Centre</a> · Agriculture and Agri-Food Canada</p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
+<p><a href="./news.html">News</a> · <a href="./about.html">Tayab Soomro</a> · <a href="blog/index.xml">RSS</a></p>
+</div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org">Quarto</a></p>
 </div>

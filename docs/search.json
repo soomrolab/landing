@@ -4,90 +4,167 @@
     "href": "join.html",
     "title": "Join the lab",
     "section": "",
-    "text": "We are recruiting at [levels]. The lab is a good fit if you are interested in [the kind of problem you work on] and want to [what people actually get to do here].\nNo prior experience with [technique] is required — training is part of the job."
+    "text": "The lab sits inside a federal research centre rather than a university department, which changes the shape of what is on offer: no graduate admissions of our own, but real projects, real breeding programs, and data that has consequences for what gets planted."
   },
   {
-    "objectID": "join.html#prospective-phd-students",
-    "href": "join.html#prospective-phd-students",
+    "objectID": "join.html#students",
+    "href": "join.html#students",
     "title": "Join the lab",
-    "section": "Prospective PhD students",
-    "text": "Prospective PhD students\nApplications go through the [programme name] at [University]; the deadline is [date]. Email before you apply so we can talk about fit — include a paragraph on what you want to work on and why, plus your CV."
+    "section": "Students",
+    "text": "Students\nWe take undergraduate co-op students, summer students and honours projects, and co-supervise graduate students with university supervisors. Past projects have run from pedigree visualisation to genomic selection pipelines to real-time nanopore analysis.\nYou do not need a genomics background. You do need to be comfortable writing code, or willing to become comfortable quickly — most of what we do is programming applied to biological questions, and we will teach the biology."
   },
   {
-    "objectID": "join.html#postdoctoral-researchers",
-    "href": "join.html#postdoctoral-researchers",
+    "objectID": "join.html#breeders-and-research-scientists",
+    "href": "join.html#breeders-and-research-scientists",
     "title": "Join the lab",
-    "section": "Postdoctoral researchers",
-    "text": "Postdoctoral researchers\n[Open position / no funded position right now, but happy to support fellowship applications — get in touch at least two months before the deadline.]"
+    "section": "Breeders and research scientists",
+    "text": "Breeders and research scientists\nIf you have a data problem — a pipeline that only runs on one person’s laptop, a genotype file you cannot join to your field book, an analysis you would rather run yourself — that is the core of the job, not a favour. Get in touch early rather than after the data is collected; the design decisions that make analysis easy are usually made before anything is sequenced."
   },
   {
-    "objectID": "join.html#undergraduates",
-    "href": "join.html#undergraduates",
+    "objectID": "join.html#collaborations",
+    "href": "join.html#collaborations",
     "title": "Join the lab",
-    "section": "Undergraduates",
-    "text": "Undergraduates\nWe take [number] students each term for [project type]. Email with your CV, a transcript, and a note on your availability.\n\nWriting to us\nSend one email to you@university.edu with the subject line Lab enquiry — [your name]. Tell us what you want to work on rather than what you have done; the CV covers the second part. We reply to everyone, usually within a week.\n\nWe particularly encourage applications from people underrepresented in [field]. If a formal requirement is a barrier for you, say so — it is often negotiable."
+    "section": "Collaborations",
+    "text": "Collaborations\nWe work with groups across AAFC, universities and industry on diagnostics, population genomics and breeding informatics. If your problem sits somewhere between genomics and software engineering, that is generally where we are most useful.\n\nGetting in touch\nEmail tayab.soomro@agr.gc.ca. For student enquiries, say what you want to work on and roughly when you are available — the CV can wait until the second email. For project enquiries, one paragraph on the biological question and one on what data exists is enough to start.\n\nWe are glad to hear from people whose route into computational work was not the standard one. If a formal requirement looks like a barrier, say so — it is often negotiable."
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Tayab Soomro",
     "section": "",
-    "text": "Overview\nA short paragraph framing the whole programme: the gap in the field, why it matters now, and the through-line connecting the themes below. Two or three sentences is plenty — the detail belongs in the sections."
+    "text": "Bioinformatics Data Scientist Lead\nI lead bioinformatics at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre, where I split my time between supporting the breeding programs and building the tools I think they will need next.\nMy route in was through computer science rather than biology, and that has shaped what I work on. Most of the problems I find interesting are not open biological questions — they are engineering problems standing between a breeder and an answer they could otherwise already have.\nAlongside the research I co-founded PathoScan, which builds portable crop disease diagnostics for growers and agronomists. Same motivation, different route: a test result that arrives in thirty minutes changes a decision, and one that arrives in a week usually does not.\n\nPositions\n\n\n2025 —\n\nBioinformatics Data Scientist Lead\nAgriculture and Agri-Food Canada, Brandon RDC\nPrincipal investigator on independent bioinformatics projects in population genomics, trait discovery and diagnostics; bioinformatics support to the centre’s breeding and research programs; supervision of students and interns.\n\n\n\n2024 – 2025\n\nBioinformatics Consultant\nAgriculture and Agri-Food Canada\nGWAS in Vicia faba for rust resistance and heat tolerance; annotation of Aphanomyces genomes; integration of the Nanopore Mk1C for point-of-care detection of plant and animal pathogens.\n\n\n\n2023\n\nSenior Computational Biologist\nFoodImprover Inc.\nAssociation mapping across ~1,000 apple accessions and 5,000+ features, and a full-stack platform for exploring the results.\n\n\n\n2020 – 2023\n\nComputational Biologist\nNRGene Canada Inc.\nIndustry-grade Python tooling and AWS-based pipeline infrastructure for genomics at scale, in a 100+ person organisation.\n\n\n\n2022 —\n\nBioinformatics Consultant\nUniversity of Saskatchewan\nWorkshops and training programs on Linux, HPC, Python and cloud computing for graduate students; HPC resource management.\n\n\n\n2017 – 2020\n\nStudent Research Assistant, then Student Bioinformatician\nLinks Lab, University of Saskatchewan · AAFC\nWhere the nanopore work started: MinION usability, real-time base-call visualisation, and the first version of what became MICAS and then nanoCAS.\n\n\n\n\nEducation\n\n\n2020 – 2022\n\nM.Sc. Agriculture\nDalhousie University\nInstitute of Comparative Genomics. Thesis: exploring the genetics of aroma production in apples.\n\n\n\n2015 – 2020\n\nB.Sc. (Honours), Computer Science and Bioinformatics\nUniversity of Saskatchewan\nThesis: kinome responses of Arabidopsis to clubroot (Plasmodiophora brassicae) infection.\n\n\n\n\nBeyond the lab\n\n\n2024\nCanadian delegate, G20 Young Entrepreneurs’ Alliance Summit, São Paulo, Brazil — drafting recommendations for policymakers ahead of the G20 Leaders’ Summit.\n\n\n2024\nSenior Data Analyst, Data For Good Regina — dashboards and regression analysis for the Regina Food Bank on donation sources, demographics and program effectiveness.\n\n\n2023\nCo-founder, PathoScan Technologies — portable in-field crop disease diagnostics.\n\n\n2020\nJudge, regional science fairs (through 2023).\n\n\n\nGrants and awards\n\n\n2025\nFront Row Ventures, AgTech investment ($50,000).\n\n\n2025\nAg-West Bio Startup Fund, AgTech investment ($50,000).\n\n\n2024\nStartupTNT Summit X Finale winner ($100,000).\n\n\n2024\nAgTech Growth Fund, Innovation Saskatchewan ($75,000).\n\n\n2023\nGlobal Innovation Challenge, 1st place, Heriot-Watt University ($8,600).\n\n\n2023\n24-hour Startup Hackathon, 1st place, Canada Farm Show, Regina ($9,000).\n\n\n2023\nOpus Startup Fund, University of Saskatchewan ($3,500).\n\n\n2022\nCoHack Hackathon, 1st place, CoLabs Saskatoon ($3,000).\n\n\n2022\nMed.Hack(+) Hackathon, 1st place, Saskatoon.\n\n\n2019\nAg Hackathon, 1st place, Emerging Agriculture.\n\n\n2018\nUndergraduate Student Research Award, Department of Computer Science, University of Saskatchewan.\n\n\n\nSelected press\n\n\nMay 2026\nSaskatoon based company creates portable disease detection device — Farm News Now\n\n\nNov 2025\n5 Q’s with Tayab Soomro, co-founder of PathoScan — Center for Data Innovation\n\n\nOct 2025\nBuilding prosperity by ensuring food security — Canada Foundation for Innovation\n\n\nOct 2025\nCatalyzing deep tech — The Globe and Mail\n\n\nJul 2025\nAgTech breakfast highlights Canadian startups — The Western Producer\n\n\nOct 2024\nSaskatoon pathogen testing company launches products online — The Hamilton Spectator\n\n\nMay 2024\nSpeedy pathogen test kit ready for field testing — Local Journalism Initiative\n\n\n\nElsewhere\nEmail · Google Scholar · GitHub · LinkedIn · Personal site"
   },
   {
-    "objectID": "research.html#theme-one",
-    "href": "research.html#theme-one",
-    "title": "Research",
-    "section": "Theme one",
-    "text": "Theme one\nWhat the question is, in plain language. What you actually do about it — the system, the data, the method. What has come out of it so far, with links to the relevant papers or software.\nFunded by [funder]. See Author et al. 2026."
-  },
-  {
-    "objectID": "research.html#theme-two",
-    "href": "research.html#theme-two",
-    "title": "Research",
-    "section": "Theme two",
-    "text": "Theme two\nSame shape. Keep each theme to one screen; anyone who wants more will read the papers."
-  },
-  {
-    "objectID": "research.html#theme-three",
-    "href": "research.html#theme-three",
-    "title": "Research",
-    "section": "Theme three",
-    "text": "Theme three\nSame shape.\n\nSoftware\nTools the lab maintains, with a one-line description of what each one is for.\n\ntoolname — what it does, in one line.\ntoolname — what it does, in one line."
-  },
-  {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "People",
+    "objectID": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html",
+    "href": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html",
+    "title": "Breeding data is a graph. We should probably store it that way.",
     "section": "",
-    "text": "Principal investigator\n\n\n\n\n\n\n[First] Soomro\nPrincipal Investigator\nEmail · Scholar · CV\n\n\nMembers\n\n\n\n\n\n[Name]\nPostdoctoral Fellow\n\n\n\n\n\n[Name]\nPhD Student\n\n\n\n\n\n[Name]\nPhD Student\n\n\n\n\n\n[Name]\nResearch Assistant\n\n\n\nAlumni\n[Name] — PhD 2025. Now [current position, institution].\n[Name] — MSc 2024. Now [current position, institution]."
+    "text": "Draft. This post was assembled from an internal memo and has not been reviewed for public release. Edit or delete it before publishing the site.\nIn most breeding programs, information lives in disconnected systems. Pedigrees sit in one database, genotypes in another, field notes in spreadsheets, environmental data somewhere else again. Each system is fine on its own terms. The problem shows up the moment a question spans two of them.\nAsk something like which high-yielding lines carry a particular haplotype while still keeping enough genetic diversity from the rest of the program? and you are looking at a manual joining exercise — export, match on line IDs that were entered slightly differently in each system, reconcile, repeat. It is doable. It is also expensive enough that most questions of that shape simply never get asked, which is the real cost."
+  },
+  {
+    "objectID": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html#modelling-the-relationships-instead-of-the-tables",
+    "href": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html#modelling-the-relationships-instead-of-the-tables",
+    "title": "Breeding data is a graph. We should probably store it that way.",
+    "section": "Modelling the relationships instead of the tables",
+    "text": "Modelling the relationships instead of the tables\nA knowledge graph takes a different starting point. Rather than storing tables and joining them later, you model the entities that actually exist in a breeding program — lines, parents, markers, haplotypes, environments, traits — and store the relationships between them directly. This line has this parent. This parent carries this marker. This marker sits in this haplotype. This haplotype was scored in this environment.\nOnce the relationships are the primary object, traversing them is a query rather than a project. The question above becomes something you type."
+  },
+  {
+    "objectID": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html#what-it-looks-like-in-practice",
+    "href": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html#what-it-looks-like-in-practice",
+    "title": "Breeding data is a graph. We should probably store it that way.",
+    "section": "What it looks like in practice",
+    "text": "What it looks like in practice\nA few groups have already built interfaces worth clicking through:\n\nHelium, James Hutton Institute\nPERSEUS, CRAG\nSoyPedi, a digitised soybean pedigree interface\n\nHelium and PERSEUS both let you pan around a crop pedigree and colour it by trait, so you can watch a trait move through the crosses. For wheat that is a useful visual validation: we select parents for particular traits, and this lets us confirm the traits actually carried through. KASP marker calls can be colour-coded onto the same pedigree and overlaid with the phenotype data, which is a quick way to check whether a marker is genuinely driving a trait or just travelling near it.\nThat is a back-of-the-napkin example, but it is the kind of thing that comes up weekly."
+  },
+  {
+    "objectID": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html#the-longer-arc",
+    "href": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html#the-longer-arc",
+    "title": "Breeding data is a graph. We should probably store it that way.",
+    "section": "The longer arc",
+    "text": "The longer arc\nThe payoff grows as phenotyping gets cheaper. Automated, high-throughput phenotyping in the trial plots captures trait data at much finer granularity with less manual labour, which means more statistical power to detect genomic associations. That data has to land somewhere that can hold it alongside everything else.\nFurther out, the same integrated structure is the groundwork for a digital twin of a breeding program: a computational model connecting genomics, pedigree, environment and field performance closely enough to evaluate candidate crosses before growing them all out. That is a long horizon. The graph is the first step, and it is useful well before you get there."
+  },
+  {
+    "objectID": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html#where-we-are",
+    "href": "blog/posts/2026-08-05-knowledge-graphs-for-breeding.html#where-we-are",
+    "title": "Breeding data is a graph. We should probably store it that way.",
+    "section": "Where we are",
+    "text": "Where we are\nWe are building a pedigree tool for wheat along these lines, and running a QTL analysis on a bi-parental wheat population as a near-term application — tracing which markers were passed down to the two parents, then asking which progeny carry both the markers and the associated traits.\nMore when there is something to show."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Soomro Lab",
     "section": "",
-    "text": "Soomro Lab · [University]\n\nWe study the one-sentence question your lab exists to answer — and build the tools needed to answer it.\n\nThe lab combines [approach one] and [approach two] to understand [system or problem]. We work at the interface of [field A] and [field B], and most of what we build is released openly.\nWe are based in the [Department] at [University], in [City].\n\nRecent\n\n\nJun 2026 New preprint on [topic] is online.\n\n\nMay 2026 [Name] joins the lab as a PhD student. Welcome!\n\n\nMar 2026 [Paper title] accepted at [venue].\n\n\n\nSee all publications →\n\n\nContact\n[Department], [University]\n[Street address], [City], [Postal code]\nyou@university.edu\nProspective students and postdocs: please read Join the lab first."
+    "text": "Soomro Lab · Brandon Research and Development Centre · Agriculture and Agri-Food Canada\n\nBreeding programs are rarely limited by biology. They are limited by the distance between the data they collect and the decisions they make.\n\nWe are the bioinformatics group at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre. We support breeders and research scientists with genomics and computational biology, and we build the tools that shorten that distance: connected breeding data, diagnostics that run in the field, and analysis pipelines that do not need a bioinformatician standing beside them.\nThe motivation is not abstract. Weather is getting less predictable faster than variety development cycles can absorb, and the crops going into the ground now have to survive conditions nobody bred them for. Breeding is how agriculture adapts. Our job is to remove whatever is slowing it down.\nThe lab is not crop-specific. The bottlenecks — disconnected data, slow diagnostics, unclear marker–trait relationships, analysis queued behind one person — recur across wheat, barley, oat, canola and pulses, and the tools are built to travel.\nThe lab is led by Tayab Soomro. Most of what we build is released openly.\n\nRecent\n\n\nMay 2026\nPoster at the Canadian Phytopathological Society annual meeting, Halifax: Breaking the cycle — collaborative approaches to fusarium head blight in barley breeding, with Badea, Tucker and colleagues.\n\n\nMar 2026\nnanoCAS presented at London Calling 2026: an event-driven framework for real-time detection and decision making during nanopore sequencing.\n\n\nFeb 2026\nBRDC Science Seminar: The Bioinfomagician — modernizing Brandon’s breeding and genomics pipelines.\n\n\nNov 2025\nFive questions on PathoScan with the Center for Data Innovation.\n\n\nOct 2025\nCanada Foundation for Innovation profile: building prosperity by ensuring food security.\n\n\nAll updates →\n\nNotes\n\n\nAug 2026\nBreeding data is a graph. We should probably store it that way. — Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks.\n\n\nAll posts →\n\nContact\nBrandon Research and Development Centre\nAgriculture and Agri-Food Canada\n2701 Grand Valley Road, P.O. Box 1000A\nBrandon, Manitoba, R7A 5Y3\ntayab.soomro@agr.gc.ca\nStudents, collaborators and breeding programs with a data problem: see Work with us."
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "Team",
+    "section": "",
+    "text": "Lead\n\n\n\n\n\nTayab Soomro\nBioinformatics Data Scientist Lead\nBio · Email · Scholar · GitHub\n\n\nTeam\n\n\n\n\n\nSarah Horovatin\nStudent Researcher\n\n\n\nCollaborators\nPeople we work with regularly across AAFC, universities and industry.\n\n\nMatthew Links\nUniversity of Saskatchewan · Nanopore diagnostics, real-time analysis\n\n\nTim Dumonceaux\nAgriculture and Agri-Food Canada, Saskatoon · Pathogen detection\n\n\nAna Badea\nAgriculture and Agri-Food Canada, Brandon · Barley breeding, fusarium head blight\n\n\nJames Tucker\nAgriculture and Agri-Food Canada, Brandon · Barley pathology\n\n\nSean Myles\nDalhousie University · Apple genomics\n\n\nZoë Migicovsky\nAcadia University · Apple genomics"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "Most of what the lab builds is released openly. The tools below fall into two groups: things anyone can install and run, and internal pipelines built for specific breeding programs at Brandon that we are working towards releasing.\n\nOpen tools\n\nnanoCAS Manuscript in preparation\nReal-time detection and decision making during nanopore sequencing\nNanopore sequencing produces reads as it goes, but most analysis still waits for the run to finish. nanoCAS treats the run as a stream: it watches reads arrive, classifies them against a target database, and raises a detection as soon as the evidence is there — which for a field diagnostic can mean an answer in minutes rather than at the end of a flow cell.\nIt ships with a web interface so the person running the sample does not need a terminal.\nGitHub\n\n\nMICAS Released\nMinION classification and alerting system\nThe precursor to nanoCAS. Watches a MinION run, classifies reads against a configured set of targets, and alerts when one appears.\nGitHub\n\n\ngenoassist Released\nAssemble, annotate, then choose\nGenome assembly rarely has one right answer. genoassist runs a genome through multiple assembly and annotation routes and reports the properties of each result side by side, so the choice of assembly is made on evidence rather than on whichever tool was run first.\nGitHub\n\n\nBiocSwirl Released\nLearn Bioconductor workflows inside R\nInteractive swirl courses that teach bioinformatics workflows in R and Bioconductor from inside the R console, so learners never have to context-switch between a tutorial and the thing they are learning.\nGitHub\n\n\nInternal pipelines\n\nBarley genomic selection In production at Brandon\nRun by the breeding program, not for it\nA genomic selection pipeline that any member of the barley breeding program can run with minimal training. The point of the design was that it should not require a bioinformatician to be free that week.\n\n\nWheat pedigree explorer In development\nSee a trait move through the crosses\nAn interactive pedigree view for wheat: pan through the pedigree, colour by trait, overlay KASP marker calls, and check visually whether a marker is driving a phenotype or merely travelling near it. Built on the graph representation described under Research.\n\n\nVariant calling and QTL workflows Ongoing\nAtomic, documented, transferable\nStandard workflows for variant calling, GWAS and QTL mapping, written to be run independently and documented well enough that a discrete task can move to whoever has capacity — across the Brandon and Morden groups rather than within one of them.\n\n\nIf one of these is close to something you need but not quite right, say so. Most of them exist because someone asked."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Breeding data is a graph. We should probably store it that way.\n\n\n\nbreeding informatics\n\nknowledge graphs\n\n\n\nWhy pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks.\n\n\n\n\n\nAug 5, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Four threads, one problem. A breeding program generates enormous amounts of information — pedigree, genotype, phenotype, environment, disease pressure — and then struggles to ask questions that cross more than one of those categories at a time. Everything below is an attempt to make one of those crossings cheap."
+  },
+  {
+    "objectID": "research.html#connected-breeding-data",
+    "href": "research.html#connected-breeding-data",
+    "title": "Research",
+    "section": "Connected breeding data",
+    "text": "Connected breeding data\nIn most breeding programs information lives in disconnected systems: pedigrees in one database, genotypes in another, field notes in spreadsheets, environmental data somewhere else again. Any question spanning two of them becomes a manual joining exercise, which means most such questions never get asked.\nWe model breeding data as a graph instead — lines, parents, markers, haplotypes, environments and traits as entities, with the relationships between them stored explicitly and queried directly. That turns which high-yielding lines carry this haplotype while still retaining diversity from the rest of the program? into a query rather than a week of work.\nThe first application is pedigree visualisation for wheat: panning through a crop pedigree coloured by trait, so you can see how a trait moves through a set of crosses, overlay KASP marker calls, and check whether a marker is genuinely driving the phenotype or merely travelling near it. Further out, the same integrated data is the groundwork for a digital twin of a breeding program — a model connecting genomics, pedigree, environment and field performance well enough to evaluate candidate crosses before growing them out."
+  },
+  {
+    "objectID": "research.html#diagnostics-that-run-where-the-crop-is",
+    "href": "research.html#diagnostics-that-run-where-the-crop-is",
+    "title": "Research",
+    "section": "Diagnostics that run where the crop is",
+    "text": "Diagnostics that run where the crop is\nConventional pathogen testing means shipping a sample to a lab and waiting days for an answer. By the time it arrives the decision has usually been made without it, often as a broad fungicide application.\nWe work on collapsing that loop with portable nanopore sequencing. nanoCAS is an event-driven framework that watches a sequencing run as it happens and makes detection calls in real time, rather than waiting for the run to finish and the analysis to be queued. Paired with the Mk1C, that puts a sequencing-grade diagnostic in a truck.\nTargets so far span plant and animal systems: Sclerotinia sclerotiorum in canola, Xylella fastidiosa in grapevine, Brucella abortus in cattle and Mycoplasma ovipneumoniae in sheep."
+  },
+  {
+    "objectID": "research.html#trait-discovery-and-population-genomics",
+    "href": "research.html#trait-discovery-and-population-genomics",
+    "title": "Research",
+    "section": "Trait discovery and population genomics",
+    "text": "Trait discovery and population genomics\nThe support side of the lab and the innovation side meet here. We run genome-wide association studies in Vicia faba populations for rust resistance and heat tolerance, and QTL analysis in bi-parental wheat populations — using the pedigree to trace which markers came down from which parent, then asking which progeny carry both the markers and the trait.\nWe also contribute to comparative genomics of Aphanomyces euteiches, the root rot pathogen of pulse crops, where better annotation is the prerequisite for understanding pathogenicity and host resistance."
+  },
+  {
+    "objectID": "research.html#pipelines-people-can-run-without-us",
+    "href": "research.html#pipelines-people-can-run-without-us",
+    "title": "Research",
+    "section": "Pipelines people can run without us",
+    "text": "Pipelines people can run without us\nA bioinformatics group becomes a bottleneck the moment every analysis has to pass through it. So a standing goal is to build pipelines that are atomic, independently runnable and documented well enough that someone can pick one up without handholding.\nThe working proof is a genomic selection pipeline that any member of the barley breeding program can now run with minimal training. The same approach is being extended across the Brandon and Morden bioinformatics groups so that discrete, well-specified tasks can move to whoever has capacity — and so that routine analysis stops competing with new work for the same hours.\n\nSoftware\n\nnanoCAS — event-driven framework for real-time detection during nanopore sequencing\nMICAS — MinION classification and alerting system\ngenoassist — genome assembly and annotation framework that compares assemblies so you can pick the best one\nBiocSwirl — interactive R/Bioconductor courses for teaching bioinformatics workflows"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "May 2026\nPoster at the Canadian Phytopathological Society annual meeting, Halifax: Breaking the cycle — collaborative approaches to fusarium head blight in barley breeding, with Badea, Tucker and colleagues.\n\n\nMar 2026\nnanoCAS presented at London Calling 2026: an event-driven framework for real-time detection and decision making during nanopore sequencing.\n\n\nFeb 2026\nBRDC Science Seminar: The Bioinfomagician — modernizing Brandon’s breeding and genomics pipelines.\n\n\nNov 2025\nFive questions on PathoScan with the Center for Data Innovation.\n\n\nOct 2025\nCanada Foundation for Innovation profile: building prosperity by ensuring food security.\n\n\nJun 2025\nnanoCAS presented at BioNet 2025, Calgary.\n\n\nJan 2025\nStarted as Bioinformatics Data Scientist Lead at AAFC’s Brandon Research and Development Centre."
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Lab members are shown in bold. Preprints and accepted manuscripts are listed together. A full list is on Google Scholar."
+    "text": "Lab members are shown in bold. Selected posters and invited talks are listed below the papers. A fuller record is on Google Scholar."
   },
   {
     "objectID": "publications.html#section",
     "href": "publications.html#section",
     "title": "Publications",
-    "section": "2026",
-    "text": "2026\n\n\nSoomro F, Coauthor A, Coauthor B\nTitle of the paper, sentence case, no shouting.\nJournal Name, 12(3), 145–160. PDF · Code · Data\n\n\nCoauthor A, Lab Member N, Soomro F\nTitle of the second paper.\nbioRxiv preprint. Preprint · Code"
+    "section": "2025",
+    "text": "2025\n\n\nSoomro T, Horovatin S, Dumonceaux TJ, Links MG\nnanoCAS: a web platform for nanopore-based point-of-care diagnostics.\nIn preparation, BMC Bioinformatics."
   },
   {
     "objectID": "publications.html#section-1",
     "href": "publications.html#section-1",
     "title": "Publications",
-    "section": "2025",
-    "text": "2025\n\n\nSoomro F, Coauthor A\nTitle of an earlier paper.\nJournal Name, 11(2), 88–102. PDF"
+    "section": "2023",
+    "text": "2023\n\n\nSoomro T, Jordan M, Watts S, Migicovsky Z, Forney C, Song J, Myles S\nGenomic insights into apple aroma diversity.\nFruit Research. DOI\n\n\nObshta O, Zabrodski MW, Soomro T, Wilson G, Masood F, Thebeau J, Silva MCB, Biganski S, Kozii IV, Koziy RV, Raza MF, Jose MS, Simko E, Wood SC\nOxytetracycline-resistant Paenibacillus larvae identified in commercial beekeeping operations in Saskatchewan using pooled honey sampling.\nJournal of Veterinary Diagnostic Investigation. DOI\n\n\nSoomro T, Done EC, Tetland EG\nPortable crop disease diagnostic solution.\nU.S. Provisional Patent Application No. 63/614,174, filed 22 December 2023."
+  },
+  {
+    "objectID": "publications.html#section-2",
+    "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\n\n\nSoomro T, Watts S, Migicovsky Z, Myles S\nCider and dessert apples: what’s the difference?\nPlants, People, Planet. DOI\n\n\n\nPosters\n\n\n2026\nBadea A, Taylor KR, Soomro T, McGonigle TP, Wang X, MacEachern D, Khanal R, Blackwell BA, Sura S, Foroud NA, Weerasinghe V, Embrador D, Quill Z, Wijekoon C, Fernando WGD, Walkowiak S, Tucker JR. Breaking the cycle: innovative collaborative approaches to fusarium head blight in barley breeding. Canadian Phytopathological Society Annual Meeting, Halifax, NS.\n\n\n2026\nSoomro T, Horovatin S, Dumonceaux TJ, Links MG. nanoCAS: an event-driven framework for real-time detection and decision making during nanopore sequencing. London Calling, London, UK.\n\n\n2025\nSoomro T, Horovatin S, Dumonceaux TJ, Links MG. nanoCAS: web platform for nanopore-based point-of-care diagnostics. BioNet, Calgary, AB.\n\n\n2021\nSoomro T, Jordan M, Watts S, Migicovsky Z, Forney C, Song J, Myles S. Harvest date shapes apple volatilome. Plant and Animal Genomes Conference, San Diego, CA.\n\n\n2020\nSoomro T, Napper S, Bonham-Smith PC. Investigation of the Arabidopsis thaliana kinome after infection with Plasmodiophora brassicae and establishment of clubroot. American Association for the Advancement of Science, Seattle, WA.\n\n\n2018\nSoomro T, Links MG. Sequence and forget: a new paradigm for MinION DNA sequencing. Research Fest, Department of Computer Science, University of Saskatchewan.\n\n\n\nInvited talks\n\n\n2026\nThe Bioinfomagician: modernizing Brandon’s breeding and genomics pipelines. BRDC Science Seminar.\n\n\n2025\nnanoCAS: web platform for nanopore-based point-of-care diagnostics. BioNet Conference.\n\n\n2024\nHow data is used in agriculture. Data For Good Saskatchewan.\n\n\n2023\nBreaking the wall of diagnostic roadblocks. Falling Walls Lab Atlantic Canada.\n\n\n2022\nThe genetics of apple aroma. UC Davis Plant Sciences Symposium.\n\n\n2022\nIntroduction to pan-genomes and how to create one. Institute for Comparative Genomics, Dalhousie University."
   }
 ]

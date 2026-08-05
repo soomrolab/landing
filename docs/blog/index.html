@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Join the lab – Soomro Lab</title>
+<title>Blog – Soomro Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-18eeef7e313107c10b6b051a6734352e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54711d67d5996e08263c3e0d81db8ddc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-18eeef7e313107c10b6b051a6734352e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-54711d67d5996e08263c3e0d81db8ddc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,36 +72,88 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="Join the lab – Soomro Lab">
-<meta property="og:description" content="Bioinformatics for plant breeding at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre.">
-<meta property="og:image" content="https://soomrolab.com/images/og-image.png">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="Soomro Lab" href="index.xml" data-external="1"><meta property="og:title" content="Blog – Soomro Lab">
+<meta property="og:image" content="https://soomrolab.com/blog/images/og-image.png">
 <meta property="og:site_name" content="Soomro Lab">
 <meta property="og:locale" content="en_CA">
-<meta property="og:image:height" content="630">
-<meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Join the lab – Soomro Lab">
-<meta name="twitter:description" content="Bioinformatics for plant breeding at Agriculture and Agri-Food Canada’s Brandon Research and Development Centre.">
-<meta name="twitter:image" content="https://soomrolab.com/images/og-image.png">
+<meta name="twitter:title" content="Blog – Soomro Lab">
+<meta name="twitter:image" content="https://soomrolab.com/blog/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="630">
-<meta name="twitter:image-width" content="1200">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.svg" alt="Soomro Lab" class="navbar-logo light-content">
-    <img src="./images/logo.svg" alt="Soomro Lab" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo.svg" alt="Soomro Lab" class="navbar-logo light-content">
+    <img src="../images/logo.svg" alt="Soomro Lab" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Soomro Lab</span>
     </a>
   </div>
@@ -110,27 +164,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link" href="../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link" href="../people.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
+    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
 <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./join.html" aria-current="page"> 
+    <a class="nav-link" href="../join.html"> 
 <span class="menu-text">Work with us</span></a>
   </li>  
 </ul>
@@ -141,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./blog/index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
+    <a class="nav-link" href="../blog/index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -161,13 +215,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YnJlZWRpbmclMjBpbmZvcm1hdGljcw==">breeding informatics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="a25vd2xlZGdlJTIwZ3JhcGhz">knowledge graphs <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Join the lab</h1>
+<h1 class="title">Blog</h1>
 </div>
 
 
@@ -184,30 +239,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- Machinery. Edit _content/join.yml instead of this file. -->
-<p>The lab sits inside a federal research centre rather than a university department, which changes the shape of what is on offer: no graduate admissions of our own, but real projects, real breeding programs, and data that has consequences for what gets planted.</p>
-<section id="students" class="level2">
-<h2 data-anchor-id="students">Students</h2>
-<p>We take undergraduate co-op students, summer students and honours projects, and co-supervise graduate students with university supervisors. Past projects have run from pedigree visualisation to genomic selection pipelines to real-time nanopore analysis.</p>
-<p>You do not need a genomics background. You do need to be comfortable writing code, or willing to become comfortable quickly — most of what we do is programming applied to biological questions, and we will teach the biology.</p>
-</section>
-<section id="breeders-and-research-scientists" class="level2">
-<h2 data-anchor-id="breeders-and-research-scientists">Breeders and research scientists</h2>
-<p>If you have a data problem — a pipeline that only runs on one person’s laptop, a genotype file you cannot join to your field book, an analysis you would rather run yourself — that is the core of the job, not a favour. Get in touch early rather than after the data is collected; the design decisions that make analysis easy are usually made before anything is sequenced.</p>
-</section>
-<section id="collaborations" class="level2">
-<h2 data-anchor-id="collaborations">Collaborations</h2>
-<p>We work with groups across AAFC, universities and industry on diagnostics, population genomics and breeding informatics. If your problem sits somewhere between genomics and software engineering, that is generally where we are most useful.</p>
-<div class="panel">
-<p><strong>Getting in touch</strong></p>
-<p>Email <a href="mailto:tayab.soomro@agr.gc.ca" class="email">tayab.soomro@agr.gc.ca</a>. For student enquiries, say what you want to work on and roughly when you are available — the CV can wait until the second email. For project enquiries, one paragraph on the biological question and one on what data exists is enough to start.</p>
+<!-- This page lists everything in blog/posts/ automatically.
+     To publish, drop a new .qmd or .md file into that folder. -->
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="YnJlZWRpbmclMjBpbmZvcm1hdGljcyUyQ2tub3dsZWRnZSUyMGdyYXBocw==" data-listing-date-sort="1785906000000" data-listing-file-modified-sort="1785944549420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="483">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/posts/2026-08-05-knowledge-graphs-for-breeding.html" class="no-external">Breeding data is a graph. We should probably store it that way.</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YnJlZWRpbmclMjBpbmZvcm1hdGljcw=='); return false;">breeding informatics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('a25vd2xlZGdlJTIwZ3JhcGhz'); return false;">knowledge graphs</div>
+
 </div>
-<p>We are glad to hear from people whose route into computational work was not the standard one. If a formal requirement looks like a barrier, say so — it is often negotiable.</p>
-
-
-</section>
-
-</main> <!-- /main -->
+<div class="delink listing-description"><a href="../blog/posts/2026-08-05-knowledge-graphs-for-breeding.html" class="no-external">
+<p>Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../blog/posts/2026-08-05-knowledge-graphs-for-breeding.html" class="no-external">
+<div class="listing-date">
+Aug 5, 2026
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
@@ -613,7 +679,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Soomro Lab · <a href="https://agriculture.canada.ca/en/science/agriculture-and-agri-food-research-centres/brandon-research-and-development-centre">Brandon Research and Development Centre</a> · Agriculture and Agri-Food Canada</p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="./news.html">News</a> · <a href="./about.html">Tayab Soomro</a> · <a href="blog/index.xml">RSS</a></p>
+<p><a href="news.qmd">News</a> · <a href="about.qmd">Tayab Soomro</a> · <a href="blog/index.xml">RSS</a></p>
 </div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org">Quarto</a></p>
@@ -624,5 +690,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

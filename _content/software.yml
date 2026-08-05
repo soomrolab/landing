@@ -1,0 +1,94 @@
+# ── Software page ────────────────────────────────────────────────
+# Check every URL before publishing — some repos may have moved or
+# may not be public yet.
+
+title: "Software"
+
+intro:
+  - "Most of what the lab builds is released openly. The tools below fall
+     into two groups: things anyone can install and run, and internal
+     pipelines built for specific breeding programs at Brandon that we are
+     working towards releasing."
+
+tools_heading: "Open tools"
+tools:
+  - name: "nanoCAS"
+    tagline: "Real-time detection and decision making during nanopore sequencing"
+    status: "Manuscript in preparation"
+    body: |
+      Nanopore sequencing produces reads as it goes, but most analysis
+      still waits for the run to finish. nanoCAS treats the run as a
+      stream: it watches reads arrive, classifies them against a target
+      database, and raises a detection as soon as the evidence is there —
+      which for a field diagnostic can mean an answer in minutes rather
+      than at the end of a flow cell.
+
+      It ships with a web interface so the person running the sample does
+      not need a terminal.
+    links:
+      GitHub: "https://github.com/tayabsoomro"
+
+  - name: "MICAS"
+    tagline: "MinION classification and alerting system"
+    status: "Released"
+    body: |
+      The precursor to nanoCAS. Watches a MinION run, classifies reads
+      against a configured set of targets, and alerts when one appears.
+    links:
+      GitHub: "https://github.com/coadunate/MICAS"
+
+  - name: "genoassist"
+    tagline: "Assemble, annotate, then choose"
+    status: "Released"
+    body: |
+      Genome assembly rarely has one right answer. genoassist runs a
+      genome through multiple assembly and annotation routes and reports
+      the properties of each result side by side, so the choice of
+      assembly is made on evidence rather than on whichever tool was run
+      first.
+    links:
+      GitHub: "https://github.com/genoassist/genoassist"
+
+  - name: "BiocSwirl"
+    tagline: "Learn Bioconductor workflows inside R"
+    status: "Released"
+    body: |
+      Interactive `swirl` courses that teach bioinformatics workflows in
+      R and Bioconductor from inside the R console, so learners never have
+      to context-switch between a tutorial and the thing they are
+      learning.
+    links:
+      GitHub: "https://github.com/tayabsoomro"
+
+pipelines_heading: "Internal pipelines"
+pipelines:
+  - name: "Barley genomic selection"
+    tagline: "Run by the breeding program, not for it"
+    status: "In production at Brandon"
+    body: |
+      A genomic selection pipeline that any member of the barley breeding
+      program can run with minimal training. The point of the design was
+      that it should not require a bioinformatician to be free that week.
+
+  - name: "Wheat pedigree explorer"
+    tagline: "See a trait move through the crosses"
+    status: "In development"
+    body: |
+      An interactive pedigree view for wheat: pan through the pedigree,
+      colour by trait, overlay KASP marker calls, and check visually
+      whether a marker is driving a phenotype or merely travelling near
+      it. Built on the graph representation described under
+      [Research](research.qmd).
+
+  - name: "Variant calling and QTL workflows"
+    tagline: "Atomic, documented, transferable"
+    status: "Ongoing"
+    body: |
+      Standard workflows for variant calling, GWAS and QTL mapping,
+      written to be run independently and documented well enough that a
+      discrete task can move to whoever has capacity — across the Brandon
+      and Morden groups rather than within one of them.
+
+closing:
+  - "If one of these is close to something you need but not quite right,
+     say so. Most of them exist because someone asked."

@@ -1,0 +1,9 @@
+---
+title: "Page not found"
+pagetitle: "Page not found — Soomro Lab"
+---
+
+That page does not exist, or has moved.
+
+Try [Research](research.qmd), [Software](software.qmd),
+[Publications](publications.qmd), or the [home page](index.qmd).

@@ -1,0 +1,22 @@
+# ── Cross-page settings ──────────────────────────────────────────
+
+publications:
+  title: "Publications"
+  intro:
+    - "Lab members are shown in **bold**. Selected posters and invited
+       talks are listed below the papers. A fuller record is on
+       [Google Scholar](https://scholar.google.com/citations?user=ivHdtcwAAAAJ&hl=en)."
+  highlight:
+    - "Soomro T"
+
+people:
+  title: "People"
+  pi_heading: "Lead"
+  members_heading: "Team"
+  alumni_heading: "Alumni"
+  collaborators_heading: "Collaborators"
+  collaborators_intro:
+    - "People we work with regularly across AAFC, universities and industry."
+
+news:
+  title: "News"

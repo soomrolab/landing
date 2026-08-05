@@ -2,35 +2,31 @@
 title: "Publications"
 ---
 
-Lab members are shown in **bold**. Preprints and accepted manuscripts are listed
-together. A full list is on [Google Scholar](https://scholar.google.com).
+<!-- Machinery. Edit _content/publications.yml and
+     _content/presentations.yml instead of this file. -->
 
-## 2026
+```{r}
+#| include: false
+source("_helpers.R")
+cfg   <- read_data("settings.yml")$publications
+pres  <- read_data("presentations.yml")
+```
 
-::: {.pubs}
+```{r}
+#| echo: false
+#| output: asis
+emit(cfg$intro)
+pubs_block(highlight = unlist(cfg$highlight %||% character()))
 
-::: {.pub}
-[**Soomro F**, Coauthor A, Coauthor B]{.authors}  
-Title of the paper, sentence case, no shouting.  
-[*Journal Name*, 12(3), 145–160.]{.venue} [[PDF](#) &middot; [Code](#) &middot; [Data](#)]{.subtle}
-:::
+if (length(pres$posters)) {
+  rule()
+  eyebrow("Posters")
+  listing_block(pres$posters)
+}
 
-::: {.pub}
-[Coauthor A, **Lab Member N**, **Soomro F**]{.authors}  
-Title of the second paper.  
-[*bioRxiv* preprint.]{.venue} [[Preprint](#) &middot; [Code](#)]{.subtle}
-:::
-
-:::
-
-## 2025
-
-::: {.pubs}
-
-::: {.pub}
-[**Soomro F**, Coauthor A]{.authors}  
-Title of an earlier paper.  
-[*Journal Name*, 11(2), 88–102.]{.venue} [[PDF](#)]{.subtle}
-:::
-
-:::
+if (length(pres$talks)) {
+  rule()
+  eyebrow("Invited talks")
+  listing_block(pres$talks)
+}
+```

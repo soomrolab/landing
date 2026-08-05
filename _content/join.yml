@@ -1,0 +1,50 @@
+# ── Work with us page ────────────────────────────────────────────
+title: "Work with us"
+
+intro:
+  - "The lab sits inside a federal research centre rather than a
+     university department, which changes the shape of what is on offer:
+     no graduate admissions of our own, but real projects, real breeding
+     programs, and data that has consequences for what gets planted."
+
+sections:
+  - title: "Students"
+    body: |
+      We take undergraduate co-op students, summer students and honours
+      projects, and co-supervise graduate students with university
+      supervisors. Past projects have run from pedigree visualisation to
+      genomic selection pipelines to real-time nanopore analysis.
+
+      You do not need a genomics background. You do need to be comfortable
+      writing code, or willing to become comfortable quickly — most of what
+      we do is programming applied to biological questions, and we will
+      teach the biology.
+
+  - title: "Breeders and research scientists"
+    body: |
+      If you have a data problem — a pipeline that only runs on one
+      person's laptop, a genotype file you cannot join to your field
+      book, an analysis you would rather run yourself — that is the core
+      of the job, not a favour. Get in touch early rather than after the
+      data is collected; the design decisions that make analysis easy are
+      usually made before anything is sequenced.
+
+  - title: "Collaborations"
+    body: |
+      We work with groups across AAFC, universities and industry on
+      diagnostics, population genomics and breeding informatics. If your
+      problem sits somewhere between genomics and software engineering,
+      that is generally where we are most useful.
+
+panel:
+  title: "Getting in touch"
+  body: |
+    Email <tayab.soomro@agr.gc.ca>. For student enquiries, say what you
+    want to work on and roughly when you are available — the CV can wait
+    until the second email. For project enquiries, one paragraph on the
+    biological question and one on what data exists is enough to start.
+
+closing:
+  - "We are glad to hear from people whose route into computational work
+     was not the standard one. If a formal requirement looks like a
+     barrier, say so — it is often negotiable."

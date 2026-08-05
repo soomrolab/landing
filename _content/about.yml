@@ -1,0 +1,157 @@
+# ── Lead bio page ────────────────────────────────────────────────
+title: "Tayab Soomro"
+role: "Bioinformatics Data Scientist Lead"
+
+intro:
+  - "I lead bioinformatics at Agriculture and Agri-Food Canada's Brandon
+     Research and Development Centre, where I split my time between
+     supporting the breeding programs and building the tools I think they
+     will need next."
+  - "My route in was through computer science rather than biology, and
+     that has shaped what I work on. Most of the problems I find
+     interesting are not open biological questions — they are engineering
+     problems standing between a breeder and an answer they could
+     otherwise already have."
+  - "Alongside the research I co-founded [PathoScan](https://pathoscan.com),
+     which builds portable crop disease diagnostics for growers and
+     agronomists. Same motivation, different route: a test result that
+     arrives in thirty minutes changes a decision, and one that arrives in
+     a week usually does not."
+
+positions_heading: "Positions"
+positions:
+  - period: "2025 —"
+    role: "Bioinformatics Data Scientist Lead"
+    org: "Agriculture and Agri-Food Canada, Brandon RDC"
+    body: |
+      Principal investigator on independent bioinformatics projects in
+      population genomics, trait discovery and diagnostics; bioinformatics
+      support to the centre's breeding and research programs; supervision
+      of students and interns.
+
+  - period: "2024 – 2025"
+    role: "Bioinformatics Consultant"
+    org: "Agriculture and Agri-Food Canada"
+    body: |
+      GWAS in *Vicia faba* for rust resistance and heat tolerance;
+      annotation of *Aphanomyces* genomes; integration of the Nanopore
+      Mk1C for point-of-care detection of plant and animal pathogens.
+
+  - period: "2023"
+    role: "Senior Computational Biologist"
+    org: "FoodImprover Inc."
+    body: |
+      Association mapping across ~1,000 apple accessions and 5,000+
+      features, and a full-stack platform for exploring the results.
+
+  - period: "2020 – 2023"
+    role: "Computational Biologist"
+    org: "NRGene Canada Inc."
+    body: |
+      Industry-grade Python tooling and AWS-based pipeline infrastructure
+      for genomics at scale, in a 100+ person organisation.
+
+  - period: "2022 —"
+    role: "Bioinformatics Consultant"
+    org: "University of Saskatchewan"
+    body: |
+      Workshops and training programs on Linux, HPC, Python and cloud
+      computing for graduate students; HPC resource management.
+
+  - period: "2017 – 2020"
+    role: "Student Research Assistant, then Student Bioinformatician"
+    org: "Links Lab, University of Saskatchewan &middot; AAFC"
+    body: |
+      Where the nanopore work started: MinION usability, real-time
+      base-call visualisation, and the first version of what became
+      MICAS and then nanoCAS.
+
+education_heading: "Education"
+education:
+  - period: "2020 – 2022"
+    role: "M.Sc. Agriculture"
+    org: "Dalhousie University"
+    body: |
+      Institute of Comparative Genomics. Thesis: exploring the genetics of
+      aroma production in apples.
+
+  - period: "2015 – 2020"
+    role: "B.Sc. (Honours), Computer Science and Bioinformatics"
+    org: "University of Saskatchewan"
+    body: |
+      Thesis: kinome responses of *Arabidopsis* to clubroot
+      (*Plasmodiophora brassicae*) infection.
+
+ventures_heading: "Beyond the lab"
+ventures:
+  - year: 2024
+    text: "Canadian delegate, **G20 Young Entrepreneurs' Alliance Summit**,
+           São Paulo, Brazil — drafting recommendations for policymakers
+           ahead of the G20 Leaders' Summit."
+  - year: 2024
+    text: "Senior Data Analyst, **Data For Good** Regina — dashboards and
+           regression analysis for the Regina Food Bank on donation
+           sources, demographics and program effectiveness."
+  - year: 2023
+    text: "Co-founder, **PathoScan Technologies** — portable in-field crop
+           disease diagnostics."
+  - year: 2020
+    text: "Judge, regional science fairs (through 2023)."
+
+awards_heading: "Grants and awards"
+awards:
+  - year: 2025
+    text: "Front Row Ventures, AgTech investment ($50,000)."
+  - year: 2025
+    text: "Ag-West Bio Startup Fund, AgTech investment ($50,000)."
+  - year: 2024
+    text: "StartupTNT Summit X Finale winner ($100,000)."
+  - year: 2024
+    text: "AgTech Growth Fund, Innovation Saskatchewan ($75,000)."
+  - year: 2023
+    text: "Global Innovation Challenge, 1st place, Heriot-Watt University ($8,600)."
+  - year: 2023
+    text: "24-hour Startup Hackathon, 1st place, Canada Farm Show, Regina ($9,000)."
+  - year: 2023
+    text: "Opus Startup Fund, University of Saskatchewan ($3,500)."
+  - year: 2022
+    text: "CoHack Hackathon, 1st place, CoLabs Saskatoon ($3,000)."
+  - year: 2022
+    text: "Med.Hack(+) Hackathon, 1st place, Saskatoon."
+  - year: 2019
+    text: "Ag Hackathon, 1st place, Emerging Agriculture."
+  - year: 2018
+    text: "Undergraduate Student Research Award, Department of Computer
+           Science, University of Saskatchewan."
+
+media_heading: "Selected press"
+media:
+  - date: 2026-05-29
+    text: "[Saskatoon based company creates portable disease detection device](https://farmnewsnow.com/2026/05/29/saskatoon-based-company-creates-portable-disease-detection-device/)
+           — Farm News Now"
+  - date: 2025-11-07
+    text: "[5 Q's with Tayab Soomro, co-founder of PathoScan](https://datainnovation.org/2025/11/5-qs-with-tayab-soomro-co-founder-of-pathoscan/)
+           — Center for Data Innovation"
+  - date: 2025-10-30
+    text: "[Building prosperity by ensuring food security](https://www.innovation.ca/projects-results/research-stories/tayab-soomro-ensuring-food-security)
+           — Canada Foundation for Innovation"
+  - date: 2025-10-30
+    text: "[Catalyzing deep tech](https://www.theglobeandmail.com/business/adv/article-catalyzing-deep-tech/)
+           — The Globe and Mail"
+  - date: 2025-07-16
+    text: "[AgTech breakfast highlights Canadian startups](https://www.producer.com/wp-research/technology/agtech-breakfast-highlights-canadian-startups/)
+           — The Western Producer"
+  - date: 2024-10-24
+    text: "[Saskatoon pathogen testing company launches products online](https://www.thespec.com/news/canada/saskatoon-pathogen-testing-company-launches-products-online/article_fcf399c8-bd94-5506-8362-0a4fcb9a5cc0.html)
+           — The Hamilton Spectator"
+  - date: 2024-05-31
+    text: "[Speedy pathogen test kit ready for field testing](https://ca.news.yahoo.com/speedy-pathogen-test-kit-ready-015444914.html)
+           — Local Journalism Initiative"
+
+elsewhere_heading: "Elsewhere"
+elsewhere:
+  Email: "mailto:tayab.soomro@agr.gc.ca"
+  Google Scholar: "https://scholar.google.com/citations?user=ivHdtcwAAAAJ&hl=en"
+  GitHub: "https://github.com/tayabsoomro"
+  LinkedIn: "https://ca.linkedin.com/in/tayabsoomro"
+  Personal site: "https://tayabsoomro.com"

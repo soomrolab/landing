@@ -122,60 +122,171 @@ Live within a minute or two.
 ## Where things live
 
 ```
-_quarto.yml     navigation, site title, footer, theme wiring
-theme.scss      all the visual design — colours and fonts at the top
-index.qmd       home page
-research.qmd    research themes and software
-people.qmd      lab members
-publications.qmd
-join.qmd        recruitment
-images/people/  headshots
-docs/           generated output — never edit by hand
-CNAME           the custom domain
+_content/            <- everything you edit
+  home.yml             hero, intro, which blocks show on the home page
+  research.yml         the four research themes
+  software.yml         tools and internal pipelines
+  about.yml            Tayab's bio, positions, education, awards, press
+  join.yml             recruitment and collaboration
+  people.yml           team and collaborators
+  publications.yml     papers and the patent
+  presentations.yml    posters and invited talks
+  news.yml             one-line updates
+  settings.yml         page titles, section headings, author bolding
+
+blog/posts/          <- drop new posts here
+  _how-to-write-posts.qmd    reference file; never publishes
+
+images/
+  people/              headshots (PI entry expects soomro.jpg)
+  logo.svg             navbar mark
+  favicon.png
+  og-image.png         social sharing card
+
+_quarto.yml          site title, navigation, footer, social links
+theme.scss           colours and fonts
+_helpers.R           machinery — turns the YAML into pages
+*.qmd                machinery — you should not need to open these
+docs/                generated output — never edit by hand
+CNAME                the custom domain
 ```
 
-## Editing notes
+The `.qmd` files are short templates that read the YAML. If you find
+yourself editing one, that is a sign the YAML is missing a field.
 
-Everything in square brackets is a placeholder to replace.
+## Pages
 
-The mono uppercase section labels come from a custom class:
+| Page | Source |
+| --- | --- |
+| Home | `_content/home.yml` + news + recent posts |
+| Research | `_content/research.yml` |
+| Software | `_content/software.yml` |
+| Team | `_content/people.yml` |
+| Publications | `_content/publications.yml` + `presentations.yml` |
+| Notes (blog) | `blog/posts/` |
+| Work with us | `_content/join.yml` |
+| Tayab Soomro | `_content/about.yml` |
+| News archive | `_content/news.yml` |
 
-```markdown
-[Recent]{.eyebrow}
+## Editing content
+
+Every field is Markdown, so links, `*emphasis*` and `[phrase]{.accent}` (the
+accent underline) work anywhere.
+
+**Home page** — the `show: true/false` flags turn the news, blog and contact
+blocks on and off; `count:` controls how many items each shows.
+
+**News** — add a block to `_content/news.yml`:
+
+```yaml
+- date: 2026-08-05
+  text: "Our paper on [topic] is out in [*Nature*](https://example.com)."
 ```
 
-Adding a person means copying one block in `people.qmd`:
+Order in the file does not matter; items sort by date, newest first.
 
-```markdown
-::: {.person}
-![](images/people/name.jpg)
-[[Name]]{.name}
-[PhD Student]{.role}
-:::
+**People** — add a block to `_content/people.yml`:
+
+```yaml
+- group: member
+  name: "Jane Doe"
+  role: "PhD Student"
+  photo: images/people/doe.jpg
+  links:
+    Email: "mailto:doe@university.edu"
 ```
 
-Note the two trailing spaces at the end of the name line — that is what makes the
-role appear on its own line in Markdown.
+`group` is `pi`, `member`, `alumni` or `collaborator`. Photos are optional —
+leave one out and a plain tile appears, so you can add someone before you have
+a picture of them. When a student finishes, change `group` to `alumni` and add
+a `now:` line; they move out of the photo grid on their own.
+
+**Publications** — add a block to `_content/publications.yml`:
+
+```yaml
+- year: 2026
+  authors: "Doe J, Soomro T"
+  title: "Title of the paper."
+  venue: "Journal Name, 14(2), 200-215."
+  links:
+    PDF: "https://..."
+    Code: "https://github.com/..."
+```
+
+Year headings generate themselves. Your name is bolded automatically — the
+string matched is under `publications: highlight:` in `settings.yml`. Posters
+and talks live in `presentations.yml` and use `year` + `text`.
+
+**Software** — `_content/software.yml`. Two lists, `tools` and `pipelines`,
+both shaped `name` / `tagline` / `status` / `body` / `links`. The `status`
+string renders as the small green chip.
+
+**Research, Join, About** — lists of `title` + `body` sections, so adding a
+section means adding a block. Use `|` for multi-paragraph bodies:
+
+```yaml
+- title: "Theme five"
+  body: |
+    First paragraph.
+
+    Second paragraph.
+```
+
+`about.yml` also holds `positions` and `education` (shaped `period` / `role` /
+`org` / `body`), plus `awards`, `ventures` and `media` lists.
+
+## Writing blog posts
+
+Drop a `.qmd` file into `blog/posts/`. It needs two fields:
+
+```yaml
+---
+title: "Your post title"
+date: 2026-08-05
+description: "One line that shows up in the listing."
+categories: [breeding informatics, nanopore]
+---
+
+Body in Markdown.
+```
+
+The blog page picks it up automatically, sorts by date, generates the RSS feed,
+and turns `categories` into filter buttons. The three most recent posts also
+appear on the home page. Files starting with `_` never publish — that is how
+`_how-to-write-posts.qmd` stays out of the site.
+
+Then, as always:
+
+```bash
+quarto render
+git add . && git commit -m "Add August post" && git push
+```
+
+## Changing the chrome
+
+Site title, navigation, footer, favicon and the social card are in
+`_quarto.yml`. Adding a nav item is one entry under `navbar: left:`.
 
 To change the palette, edit the six variables at the top of `theme.scss`. The
 site uses a single accent colour (`$pine`); changing that one value re-tints
-links, section labels, and focus rings together.
+links, section labels, the software status chips, blockquote rules and focus
+rings together. The logo and social card are separate files in `images/` and
+would need regenerating by hand.
 
-Quarto ships a set of ready-made Bootswatch themes if you would rather start
-somewhere else — swap `default` for `cosmo`, `litera`, `flatly`, etc. in
-`_quarto.yml` and keep `theme.scss` layered on top.
+## If something breaks
 
-## Adding R output
+**A page renders empty or a block is missing.** The `.yml` file has a syntax
+error — usually a colon or a `#` inside an unquoted string. Wrap the value in
+double quotes. Indentation must be spaces, never tabs.
 
-Any page can run R. Change the extension logic nowhere — just add a chunk:
+**`Missing data file: _content/x.yml`.** A file was renamed or deleted; the
+page renders without that block rather than failing.
 
-````markdown
-```{r}
-#| echo: false
-#| fig-width: 7
-plot(pressure)
-```
-````
+**Content appears as literal `:::` on the page.** A chunk lost its
+`#| output: asis` option.
 
-The figure is rendered at build time and baked into the HTML, so the published
-site stays static.
+**`there is no package called 'yaml'`.** Run `install.packages("yaml")`. It
+normally arrives with knitr, so this is rare.
+
+**A new blog post does not appear.** It is missing `title:` or `date:` in the
+front matter, or the filename starts with an underscore.

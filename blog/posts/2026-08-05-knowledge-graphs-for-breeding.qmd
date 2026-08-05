@@ -1,0 +1,78 @@
+---
+title: "Breeding data is a graph. We should probably store it that way."
+date: 2026-08-05
+description: "Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks."
+categories: [breeding informatics, knowledge graphs]
+---
+
+::: {.panel}
+**Draft.** This post was assembled from an internal memo and has not been
+reviewed for public release. Edit or delete it before publishing the site.
+:::
+
+In most breeding programs, information lives in disconnected systems.
+Pedigrees sit in one database, genotypes in another, field notes in
+spreadsheets, environmental data somewhere else again. Each system is fine on
+its own terms. The problem shows up the moment a question spans two of them.
+
+Ask something like *which high-yielding lines carry a particular haplotype
+while still keeping enough genetic diversity from the rest of the program?*
+and you are looking at a manual joining exercise — export, match on line IDs
+that were entered slightly differently in each system, reconcile, repeat.
+It is doable. It is also expensive enough that most questions of that shape
+simply never get asked, which is the real cost.
+
+## Modelling the relationships instead of the tables
+
+A knowledge graph takes a different starting point. Rather than storing
+tables and joining them later, you model the entities that actually exist in
+a breeding program — lines, parents, markers, haplotypes, environments,
+traits — and store the relationships between them directly. *This line has
+this parent. This parent carries this marker. This marker sits in this
+haplotype. This haplotype was scored in this environment.*
+
+Once the relationships are the primary object, traversing them is a query
+rather than a project. The question above becomes something you type.
+
+## What it looks like in practice
+
+A few groups have already built interfaces worth clicking through:
+
+- [Helium](https://helium.hutton.ac.uk/#/), James Hutton Institute
+- [PERSEUS](https://bioinformatics.cragenomica.es/perseus/home), CRAG
+- [SoyPedi](https://tgil.donga.ac.kr/SoyPedi/index.html), a digitised
+  soybean pedigree interface
+
+Helium and PERSEUS both let you pan around a crop pedigree and colour it by
+trait, so you can watch a trait move through the crosses. For wheat that is a
+useful visual validation: we select parents for particular traits, and this
+lets us confirm the traits actually carried through. KASP marker calls can be
+colour-coded onto the same pedigree and overlaid with the phenotype data,
+which is a quick way to check whether a marker is genuinely driving a trait
+or just travelling near it.
+
+That is a back-of-the-napkin example, but it is the kind of thing that comes
+up weekly.
+
+## The longer arc
+
+The payoff grows as phenotyping gets cheaper. Automated, high-throughput
+phenotyping in the trial plots captures trait data at much finer granularity
+with less manual labour, which means more statistical power to detect
+genomic associations. That data has to land somewhere that can hold it
+alongside everything else.
+
+Further out, the same integrated structure is the groundwork for a digital
+twin of a breeding program: a computational model connecting genomics,
+pedigree, environment and field performance closely enough to evaluate
+candidate crosses before growing them all out. That is a long horizon. The
+graph is the first step, and it is useful well before you get there.
+
+## Where we are
+
+We are building a pedigree tool for wheat along these lines, and running a
+QTL analysis on a bi-parental wheat population as a near-term application —
+tracing which markers were passed down to the two parents, then asking which
+progeny carry both the markers and the associated traits.
+
+More when there is something to show.

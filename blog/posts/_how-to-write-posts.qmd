@@ -1,0 +1,53 @@
+---
+title: "How to write a post (this file never publishes)"
+date: 2000-01-01
+---
+
+The leading underscore in the filename keeps this out of the blog listing and
+out of the rendered site. It is a reference file, not a post.
+
+## Adding a post
+
+Create a `.qmd` file in this folder. It needs two fields:
+
+``` yaml
+---
+title: "Your post title"
+date: 2026-08-05
+description: "One line that shows up in the listing."
+categories: [breeding informatics, nanopore]
+---
+
+Body in Markdown.
+```
+
+That is the whole workflow. The blog page picks it up, sorts by date,
+generates the RSS feed, and turns `categories` into filter buttons. The three
+most recent posts also appear on the home page.
+
+Filenames do not matter — dating them just keeps the folder readable. Posts
+with no R code can be saved as `.md` and render faster. Shared defaults
+(author, date format) live in `_metadata.yml` next to this file.
+
+## Running code in a post
+
+``` {{r}}
+#| echo: false
+#| fig-width: 6
+plot(pressure)
+```
+
+The figure is computed at render time and baked into the HTML, so the
+published site stays static.
+
+## Useful bits
+
+A shaded callout:
+
+``` markdown
+::: {.panel}
+**Heads up.** Text goes here.
+:::
+```
+
+The accent underline: `[phrase]{.accent}`.

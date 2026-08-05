@@ -1,0 +1,6 @@
+# Applied to every post in this folder. Set defaults here once.
+
+author: "Tayab Soomro"
+toc: false
+title-block-banner: false
+date-format: "MMMM D, YYYY"

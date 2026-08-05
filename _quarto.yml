@@ -1,38 +1,63 @@
+# ── Site chrome ──────────────────────────────────────────────────
+# Title, navigation, footer and social links live here.
+# Page *content* lives in _content/*.yml — see the README.
+
 project:
   type: website
-  output-dir: docs          # GitHub Pages will serve from this folder
+  output-dir: docs          # GitHub Pages serves from this folder
+  execute-dir: project      # so paths in _helpers.R resolve from the root
   resources:
     - CNAME                 # keeps the custom domain alive across re-renders
-    - images/
+    - images/               # headshots are referenced from raw HTML
 
 website:
   title: "Soomro Lab"
-  description: "Research group website."
+  description: "Bioinformatics for plant breeding at Agriculture and Agri-Food Canada's Brandon Research and Development Centre."
   site-url: https://soomrolab.com
-  open-graph: true
+  favicon: images/favicon.png
+  open-graph:
+    image: images/og-image.png
+    locale: en_CA
+  twitter-card:
+    image: images/og-image.png
+    card-style: summary_large_image
+
   navbar:
+    logo: images/logo.svg
+    logo-alt: "Soomro Lab"
     title: "Soomro Lab"
-    pinned: false
     left:
       - text: "Research"
         href: research.qmd
-      - text: "People"
+      - text: "Software"
+        href: software.qmd
+      - text: "Team"
         href: people.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "Join"
+      - text: "Notes"
+        href: blog/index.qmd
+      - text: "Work with us"
         href: join.qmd
     right:
       - icon: github
-        href: https://github.com/YOUR-GITHUB-USERNAME
+        href: https://github.com/tayabsoomro
         aria-label: GitHub
+      - icon: rss
+        href: blog/index.xml
+        aria-label: RSS
       - icon: envelope
-        href: "mailto:you@university.edu"
+        href: "mailto:tayab.soomro@agr.gc.ca"
         aria-label: Email
+
   page-footer:
     border: false
-    left: "Soomro Lab &middot; [Department] &middot; [University]"
-    right: "Built with [Quarto](https://quarto.org)"
+    left: |
+      Soomro Lab &middot; [Brandon Research and Development Centre](https://agriculture.canada.ca/en/science/agriculture-and-agri-food-research-centres/brandon-research-and-development-centre) &middot; Agriculture and Agri-Food Canada
+    center: |
+      [News](news.qmd) &middot; [Tayab Soomro](about.qmd) &middot; [RSS](blog/index.xml)
+    right: |
+      Built with [Quarto](https://quarto.org)
 
 format:
   html:

@@ -2,35 +2,19 @@
 title: "Join the lab"
 ---
 
-We are recruiting at [levels]. The lab is a good fit if you are interested in
-[the kind of problem you work on] and want to [what people actually get to do
-here].
+<!-- Machinery. Edit _content/join.yml instead of this file. -->
 
-No prior experience with [technique] is required — training is part of the job.
+```{r}
+#| include: false
+source("_helpers.R")
+join <- read_data("join.yml")
+```
 
-## Prospective PhD students
-
-Applications go through the [programme name] at [University]; the deadline is
-[date]. Email before you apply so we can talk about fit — include a paragraph on
-what you want to work on and why, plus your CV.
-
-## Postdoctoral researchers
-
-[Open position / no funded position right now, but happy to support fellowship
-applications — get in touch at least two months before the deadline.]
-
-## Undergraduates
-
-We take [number] students each term for [project type]. Email with your CV, a
-transcript, and a note on your availability.
-
-::: {.panel}
-**Writing to us**
-
-Send one email to <you@university.edu> with the subject line `Lab enquiry —
-[your name]`. Tell us what you want to work on rather than what you have done;
-the CV covers the second part. We reply to everyone, usually within a week.
-:::
-
-We particularly encourage applications from people underrepresented in [field].
-If a formal requirement is a barrier for you, say so — it is often negotiable.
+```{r}
+#| echo: false
+#| output: asis
+emit(join$intro)
+sections_block(join$sections)
+panel_block(join$panel)
+emit(join$closing)
+```

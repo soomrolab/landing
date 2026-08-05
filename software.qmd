@@ -1,0 +1,34 @@
+---
+title: "Software"
+---
+
+<!-- Machinery. Edit _content/software.yml instead of this file. -->
+
+```{r}
+#| include: false
+source("_helpers.R")
+sw <- read_data("software.yml")
+```
+
+```{r}
+#| echo: false
+#| output: asis
+emit(sw$intro)
+
+if (length(sw$tools)) {
+  rule()
+  eyebrow(sw$tools_heading %||% "Open tools")
+  tools_block(sw$tools)
+}
+
+if (length(sw$pipelines)) {
+  rule()
+  eyebrow(sw$pipelines_heading %||% "Internal pipelines")
+  tools_block(sw$pipelines)
+}
+
+if (length(sw$closing)) {
+  rule()
+  emit(sw$closing)
+}
+```

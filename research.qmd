@@ -2,34 +2,23 @@
 title: "Research"
 ---
 
-[Overview]{.eyebrow}
+<!-- Machinery. Edit _content/research.yml instead of this file. -->
 
-A short paragraph framing the whole programme: the gap in the field, why it
-matters now, and the through-line connecting the themes below. Two or three
-sentences is plenty — the detail belongs in the sections.
+```{r}
+#| include: false
+source("_helpers.R")
+res <- read_data("research.yml")
+```
 
-## Theme one
+```{r}
+#| echo: false
+#| output: asis
+emit(res$intro)
+sections_block(res$themes)
 
-What the question is, in plain language. What you actually do about it — the
-system, the data, the method. What has come out of it so far, with links to the
-relevant papers or software.
-
-Funded by [funder]. See [Author et al. 2026](publications.qmd).
-
-## Theme two
-
-Same shape. Keep each theme to one screen; anyone who wants more will read the
-papers.
-
-## Theme three
-
-Same shape.
-
----
-
-[Software]{.eyebrow}
-
-Tools the lab maintains, with a one-line description of what each one is for.
-
-- **[toolname](https://github.com/YOUR-GITHUB-USERNAME/toolname)** — what it does, in one line.
-- **[toolname](https://github.com/YOUR-GITHUB-USERNAME/toolname)** — what it does, in one line.
+if (length(res$software)) {
+  rule()
+  eyebrow(res$software_heading %||% "Software")
+  software_block(res$software)
+}
+```

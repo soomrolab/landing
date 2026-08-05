@@ -1,0 +1,35 @@
+# ── News items ───────────────────────────────────────────────────
+# Order does not matter — sorted by date, newest first.
+# `text` is Markdown.
+#
+# Dates below are approximate where the CV gave only a year —
+# adjust them and they will re-sort themselves.
+
+- date: 2026-05-01
+  text: "Poster at the Canadian Phytopathological Society annual meeting,
+         Halifax: *Breaking the cycle — collaborative approaches to fusarium
+         head blight in barley breeding*, with Badea, Tucker and colleagues."
+
+- date: 2026-03-01
+  text: "nanoCAS presented at [London Calling 2026](https://nanoporetech.com/about/events/conferences/london-calling-2026):
+         an event-driven framework for real-time detection and decision making
+         during nanopore sequencing."
+
+- date: 2026-02-01
+  text: "BRDC Science Seminar: *The Bioinfomagician — modernizing Brandon's
+         breeding and genomics pipelines*."
+
+- date: 2025-11-07
+  text: "[Five questions on PathoScan](https://datainnovation.org/2025/11/5-qs-with-tayab-soomro-co-founder-of-pathoscan/)
+         with the Center for Data Innovation."
+
+- date: 2025-10-30
+  text: "Canada Foundation for Innovation profile:
+         [building prosperity by ensuring food security](https://www.innovation.ca/projects-results/current-topics-research-funding/agriculture-agrifood-innovation)."
+
+- date: 2025-06-01
+  text: "nanoCAS presented at BioNet 2025, Calgary."
+
+- date: 2025-01-01
+  text: "Started as Bioinformatics Data Scientist Lead at AAFC's Brandon
+         Research and Development Centre."
