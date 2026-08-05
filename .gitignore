@@ -1,0 +1,10 @@
+.quarto/
+*_files/
+*.rmarkdown
+.Rproj.user/
+.Rhistory
+.RData
+.DS_Store
+
+/.quarto/
+**/*.quarto_ipynb

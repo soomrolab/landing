@@ -1,0 +1,53 @@
+---
+pagetitle: "Soomro Lab"
+---
+
+[Soomro Lab &middot; [University]]{.eyebrow}
+
+::: {.lede}
+We study [the one-sentence question your lab exists to answer]{style="border-bottom:2px solid #2f6a5c;"} — and build the tools needed to answer it.
+:::
+
+The lab combines [approach one] and [approach two] to understand [system or
+problem]. We work at the interface of [field A] and [field B], and most of what
+we build is released openly.
+
+We are based in the [Department] at [University], in [City].
+
+---
+
+[Recent]{.eyebrow}
+
+::: {.news}
+
+::: {.item}
+[Jun 2026]{.date}
+New preprint on [topic] is [online](https://example.com).
+:::
+
+::: {.item}
+[May 2026]{.date}
+[Name] joins the lab as a PhD student. Welcome!
+:::
+
+::: {.item}
+[Mar 2026]{.date}
+[Paper title] accepted at [venue].
+:::
+
+:::
+
+<p class="subtle" style="margin-top:1.25rem;">
+[See all publications &rarr;](publications.qmd)
+</p>
+
+---
+
+[Contact]{.eyebrow}
+
+[Department], [University]  
+[Street address], [City], [Postal code]
+
+<you@university.edu>
+
+Prospective students and postdocs: please read [Join the lab](join.qmd) first.

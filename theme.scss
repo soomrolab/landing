@@ -1,0 +1,241 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+// ── Palette ─────────────────────────────────────────────────────
+// One accent (pine), everything else is ink, paper, and hairlines.
+$ink:        #17212e;   // body text
+$ink-muted:  #5f6d7c;   // captions, roles, metadata
+$rule:       #dde2df;   // hairlines
+$wash:       #f0f3f0;   // pale panels
+$pine:       #2f6a5c;   // the accent
+$pine-dark:  #1f4b40;
+$paper:      #ffffff;
+
+// ── Bootstrap / Quarto overrides ────────────────────────────────
+$body-bg:             $paper;
+$body-color:          $ink;
+$link-color:          $pine;
+$link-hover-color:    $pine-dark;
+$border-color:        $rule;
+
+$font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-family-monospace:  "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$headings-font-family:   "Newsreader", Georgia, "Times New Roman", serif;
+$headings-font-weight:   400;
+$headings-color:         $ink;
+
+$font-size-root:    17px;
+$line-height-base:  1.65;
+
+$navbar-bg: $paper;
+$navbar-fg: $ink;
+$navbar-hl: $pine;
+
+$footer-bg: $paper;
+$footer-fg: $ink-muted;
+
+$code-bg:    $wash;
+$code-color: $pine-dark;
+
+/*-- scss:rules --*/
+
+// ── Navbar ──────────────────────────────────────────────────────
+.navbar {
+  border-bottom: 1px solid $rule;
+  padding-block: 1.1rem;
+}
+
+.navbar-brand {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.navbar-nav .nav-link {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  padding-inline: 0.85rem !important;
+}
+
+// ── Typography ──────────────────────────────────────────────────
+h1, .h1 {
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.5rem;
+}
+
+h2, .h2 {
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h3, .h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+p { margin-bottom: 1.15rem; }
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba($pine, 0.3);
+  transition: border-color 0.15s ease, color 0.15s ease;
+
+  &:hover { border-bottom-color: $pine; }
+}
+
+.navbar a, .footer a, a.headshot-link { border-bottom: none; }
+
+hr {
+  border: 0;
+  border-top: 1px solid $rule;
+  opacity: 1;
+  margin-block: 2.75rem;
+}
+
+// ── Signature: the mono eyebrow label ───────────────────────────
+// Usage in Markdown:  [Research themes]{.eyebrow}
+.eyebrow {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: $pine;
+  margin-bottom: 0.9rem;
+}
+
+// The opening statement on the home page.
+.lede {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(1.5rem, 3.4vw, 2.15rem);
+  font-weight: 300;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  max-width: 24ch * 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.subtle {
+  color: $ink-muted;
+  font-size: 0.95rem;
+}
+
+// ── People grid ─────────────────────────────────────────────────
+.people {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2.25rem 1.75rem;
+  margin-block: 1.75rem 3rem;
+}
+
+.person p { margin-bottom: 0.25rem; }
+
+.person img,
+.person .headshot {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  background: $wash;
+  margin-bottom: 0.85rem;
+}
+
+.person .name {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.person .role {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: $ink-muted;
+}
+
+// ── News / updates list ─────────────────────────────────────────
+.news {
+  border-top: 1px solid $rule;
+  margin-block: 1.5rem 0;
+}
+
+.news .item {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 1rem;
+  padding-block: 0.9rem;
+  border-bottom: 1px solid $rule;
+}
+
+.news .date {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: $ink-muted;
+  padding-top: 0.25rem;
+}
+
+.news p { margin-bottom: 0; }
+
+@media (max-width: 575px) {
+  .news .item { grid-template-columns: 1fr; gap: 0.15rem; }
+}
+
+// ── Publications ────────────────────────────────────────────────
+.pubs { margin-block: 1.5rem 0; }
+
+.pubs .pub {
+  padding-block: 1rem;
+  border-bottom: 1px solid $rule;
+}
+
+.pubs .pub p { margin-bottom: 0.2rem; }
+
+.pubs .venue {
+  font-style: italic;
+  color: $ink-muted;
+  font-size: 0.92rem;
+}
+
+.pubs .authors { font-size: 0.95rem; }
+
+.pubs .authors strong { font-weight: 500; }
+
+// ── Callout panel (for the Join page) ───────────────────────────
+.panel {
+  background: $wash;
+  padding: 1.75rem 1.9rem;
+  border-radius: 2px;
+  margin-block: 2rem;
+}
+
+.panel > :last-child { margin-bottom: 0; }
+
+// ── Footer ──────────────────────────────────────────────────────
+.nav-footer {
+  border-top: 1px solid $rule;
+  font-size: 0.83rem;
+  margin-top: 5rem;
+  padding-block: 2rem;
+}
+
+// ── Accessibility floor ─────────────────────────────────────────
+:focus-visible {
+  outline: 2px solid $pine;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}

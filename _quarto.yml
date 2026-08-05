@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: docs          # GitHub Pages will serve from this folder
+  resources:
+    - CNAME                 # keeps the custom domain alive across re-renders
+    - images/
+
+website:
+  title: "Soomro Lab"
+  description: "Research group website."
+  site-url: https://soomrolab.com
+  open-graph: true
+  navbar:
+    title: "Soomro Lab"
+    pinned: false
+    left:
+      - text: "Research"
+        href: research.qmd
+      - text: "People"
+        href: people.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Join"
+        href: join.qmd
+    right:
+      - icon: github
+        href: https://github.com/YOUR-GITHUB-USERNAME
+        aria-label: GitHub
+      - icon: envelope
+        href: "mailto:you@university.edu"
+        aria-label: Email
+  page-footer:
+    border: false
+    left: "Soomro Lab &middot; [Department] &middot; [University]"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      - default
+      - theme.scss
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    grid:
+      body-width: 820px
+      sidebar-width: 0px
+      margin-width: 180px

@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "join.html",
+    "href": "join.html",
+    "title": "Join the lab",
+    "section": "",
+    "text": "We are recruiting at [levels]. The lab is a good fit if you are interested in [the kind of problem you work on] and want to [what people actually get to do here].\nNo prior experience with [technique] is required — training is part of the job."
+  },
+  {
+    "objectID": "join.html#prospective-phd-students",
+    "href": "join.html#prospective-phd-students",
+    "title": "Join the lab",
+    "section": "Prospective PhD students",
+    "text": "Prospective PhD students\nApplications go through the [programme name] at [University]; the deadline is [date]. Email before you apply so we can talk about fit — include a paragraph on what you want to work on and why, plus your CV."
+  },
+  {
+    "objectID": "join.html#postdoctoral-researchers",
+    "href": "join.html#postdoctoral-researchers",
+    "title": "Join the lab",
+    "section": "Postdoctoral researchers",
+    "text": "Postdoctoral researchers\n[Open position / no funded position right now, but happy to support fellowship applications — get in touch at least two months before the deadline.]"
+  },
+  {
+    "objectID": "join.html#undergraduates",
+    "href": "join.html#undergraduates",
+    "title": "Join the lab",
+    "section": "Undergraduates",
+    "text": "Undergraduates\nWe take [number] students each term for [project type]. Email with your CV, a transcript, and a note on your availability.\n\nWriting to us\nSend one email to you@university.edu with the subject line Lab enquiry — [your name]. Tell us what you want to work on rather than what you have done; the CV covers the second part. We reply to everyone, usually within a week.\n\nWe particularly encourage applications from people underrepresented in [field]. If a formal requirement is a barrier for you, say so — it is often negotiable."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Overview\nA short paragraph framing the whole programme: the gap in the field, why it matters now, and the through-line connecting the themes below. Two or three sentences is plenty — the detail belongs in the sections."
+  },
+  {
+    "objectID": "research.html#theme-one",
+    "href": "research.html#theme-one",
+    "title": "Research",
+    "section": "Theme one",
+    "text": "Theme one\nWhat the question is, in plain language. What you actually do about it — the system, the data, the method. What has come out of it so far, with links to the relevant papers or software.\nFunded by [funder]. See Author et al. 2026."
+  },
+  {
+    "objectID": "research.html#theme-two",
+    "href": "research.html#theme-two",
+    "title": "Research",
+    "section": "Theme two",
+    "text": "Theme two\nSame shape. Keep each theme to one screen; anyone who wants more will read the papers."
+  },
+  {
+    "objectID": "research.html#theme-three",
+    "href": "research.html#theme-three",
+    "title": "Research",
+    "section": "Theme three",
+    "text": "Theme three\nSame shape.\n\nSoftware\nTools the lab maintains, with a one-line description of what each one is for.\n\ntoolname — what it does, in one line.\ntoolname — what it does, in one line."
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "Principal investigator\n\n\n\n\n\n\n[First] Soomro\nPrincipal Investigator\nEmail · Scholar · CV\n\n\nMembers\n\n\n\n\n\n[Name]\nPostdoctoral Fellow\n\n\n\n\n\n[Name]\nPhD Student\n\n\n\n\n\n[Name]\nPhD Student\n\n\n\n\n\n[Name]\nResearch Assistant\n\n\n\nAlumni\n[Name] — PhD 2025. Now [current position, institution].\n[Name] — MSc 2024. Now [current position, institution]."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Soomro Lab",
+    "section": "",
+    "text": "Soomro Lab · [University]\n\nWe study the one-sentence question your lab exists to answer — and build the tools needed to answer it.\n\nThe lab combines [approach one] and [approach two] to understand [system or problem]. We work at the interface of [field A] and [field B], and most of what we build is released openly.\nWe are based in the [Department] at [University], in [City].\n\nRecent\n\n\nJun 2026 New preprint on [topic] is online.\n\n\nMay 2026 [Name] joins the lab as a PhD student. Welcome!\n\n\nMar 2026 [Paper title] accepted at [venue].\n\n\n\nSee all publications →\n\n\nContact\n[Department], [University]\n[Street address], [City], [Postal code]\nyou@university.edu\nProspective students and postdocs: please read Join the lab first."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Lab members are shown in bold. Preprints and accepted manuscripts are listed together. A full list is on Google Scholar."
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "2026",
+    "text": "2026\n\n\nSoomro F, Coauthor A, Coauthor B\nTitle of the paper, sentence case, no shouting.\nJournal Name, 12(3), 145–160. PDF · Code · Data\n\n\nCoauthor A, Lab Member N, Soomro F\nTitle of the second paper.\nbioRxiv preprint. Preprint · Code"
+  },
+  {
+    "objectID": "publications.html#section-1",
+    "href": "publications.html#section-1",
+    "title": "Publications",
+    "section": "2025",
+    "text": "2025\n\n\nSoomro F, Coauthor A\nTitle of an earlier paper.\nJournal Name, 11(2), 88–102. PDF"
+  }
+]

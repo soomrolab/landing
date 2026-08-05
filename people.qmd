@@ -1,0 +1,60 @@
+---
+title: "People"
+---
+
+[Principal investigator]{.eyebrow}
+
+::: {.people}
+
+::: {.person}
+<!-- Swap the div below for: ![](images/people/soomro.jpg) -->
+::: {.headshot}
+:::
+[[First] Soomro]{.name}  
+[Principal Investigator]{.role}  
+[[Email](mailto:you@university.edu) &middot; [Scholar](https://scholar.google.com) &middot; [CV](cv.pdf)]{.subtle}
+:::
+
+:::
+
+[Members]{.eyebrow}
+
+::: {.people}
+
+::: {.person}
+::: {.headshot}
+:::
+[[Name]]{.name}  
+[Postdoctoral Fellow]{.role}
+:::
+
+::: {.person}
+::: {.headshot}
+:::
+[[Name]]{.name}  
+[PhD Student]{.role}
+:::
+
+::: {.person}
+::: {.headshot}
+:::
+[[Name]]{.name}  
+[PhD Student]{.role}
+:::
+
+::: {.person}
+::: {.headshot}
+:::
+[[Name]]{.name}  
+[Research Assistant]{.role}
+:::
+
+:::
+
+---
+
+[Alumni]{.eyebrow}
+
+**[Name]** — PhD 2025. Now [current position, institution].
+
+**[Name]** — MSc 2024. Now [current position, institution].
