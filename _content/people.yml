@@ -30,9 +30,14 @@
 - group: collaborator
   name: "Dr. Ana Badea"
   org: "Agriculture and Agri-Food Canada, Brandon"
-  role: "Barley Breeder"
+  role: "Research Scientist, Barley Breeder"
 
 - group: collaborator
   name: "Dr. Santosh Kumar"
   org: "Agriculture and Agri-Food Canada, Brandon"
-  role: "Wheat Breeder"
+  role: "Research Scientist, Wheat Breeder"
+
+- group: collaborator
+  name: "Dr. Nicholas Larkan"
+  org: "Agriculture and Agri-Food Canada, Saskatoon"
+  role: "Research Scientist, Pulse Breeder"
