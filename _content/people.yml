@@ -15,43 +15,24 @@
     Scholar: "https://scholar.google.com/citations?user=ivHdtcwAAAAJ&hl=en"
     GitHub: "https://github.com/tayabsoomro"
 
-  # Surname inferred from the nanoCAS author list. Confirm it, and check
-  # she is happy to be listed, before publishing.
 - group: member
-  name: "Sarah Horovatin"
-  role: "Student Researcher"
+  name: "Sarah DeVries"
+  role: "FSWEP Bioinformatics Student"
 
-# ── Collaborators ────────────────────────────────────────────────
-# Drawn from your published and presented work. Everyone here is a
-# real co-author, but none of them has agreed to appear on your site —
-# trim or remove this whole section if you would rather not list them.
+# ── Collaborators ────────────────────────────────
+# Check each of them is happy to be listed before publishing.
 
 - group: collaborator
-  name: "Matthew Links"
-  org: "University of Saskatchewan"
-  role: "Nanopore diagnostics, real-time analysis"
-
-- group: collaborator
-  name: "Tim Dumonceaux"
+  name: "Dr. Tim Dumonceaux"
   org: "Agriculture and Agri-Food Canada, Saskatoon"
-  role: "Pathogen detection"
+  role: "Research Scientist, Microbiology"
 
 - group: collaborator
-  name: "Ana Badea"
+  name: "Dr. Ana Badea"
   org: "Agriculture and Agri-Food Canada, Brandon"
-  role: "Barley breeding, fusarium head blight"
+  role: "Barley Breeder"
 
 - group: collaborator
-  name: "James Tucker"
+  name: "Dr. Santosh Kumar"
   org: "Agriculture and Agri-Food Canada, Brandon"
-  role: "Barley pathology"
-
-- group: collaborator
-  name: "Sean Myles"
-  org: "Dalhousie University"
-  role: "Apple genomics"
-
-- group: collaborator
-  name: "Zoë Migicovsky"
-  org: "Acadia University"
-  role: "Apple genomics"
+  role: "Wheat Breeder"
