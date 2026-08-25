@@ -13,20 +13,19 @@ intro:
   - "We are the bioinformatics group at Agriculture and Agri-Food Canada's
      Brandon Research and Development Centre. We support breeders and
      research scientists with genomics and computational biology, and we
-     build the tools that shorten that distance: connected breeding data,
-     diagnostics that run in the field, and analysis pipelines that do not
-     need a bioinformatician standing beside them."
+     build the tools that shorten that distance: connected breeding data 
+     and analysis pipelines that do not need a bioinformatician standing 
+     beside them."
 
-  - "The motivation is not abstract. Weather is getting less predictable
-     faster than variety development cycles can absorb, and the crops going
-     into the ground now have to survive conditions nobody bred them for.
-     Breeding is how agriculture adapts. Our job is to remove whatever is
-     slowing it down."
+  - "Weather is getting less predictable faster than variety development 
+     cycles can absorb, and the crops going into the ground now have to 
+     survive conditions nobody bred them for. Breeding is how agriculture 
+     adapts. Our job is to remove whatever is slowing it down."
 
-  - "The lab is not crop-specific. The bottlenecks — disconnected data,
-     slow diagnostics, unclear marker–trait relationships, analysis queued
-     behind one person — recur across wheat, barley, oat, canola and
-     pulses, and the tools are built to travel."
+  - "These bottlenecks (i.e., disconnected data, unclear marker–trait 
+     relationships, analysis queued behind one person) recur across wheat, 
+     barley, oat, canola and pulses, and therefore we build tools that travel
+     across crop-types."
 
   - "The lab is led by [Tayab Soomro](about.qmd). Most of what we build is
      [released openly](software.qmd)."
