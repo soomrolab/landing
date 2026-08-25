@@ -61,6 +61,7 @@ website:
 
 format:
   html:
+    include-in-header: analytics.html   # Google Analytics (gtag.js)
     theme:
       - default
       - theme.scss
