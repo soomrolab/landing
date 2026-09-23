@@ -10,25 +10,28 @@ lede: >
   make]{.accent}.
 
 intro:
-  - "We are the bioinformatics group at Agriculture and Agri-Food Canada's
-     Brandon Research and Development Centre. We support breeders and
-     research scientists with genomics and computational biology, and we
-     build the tools that shorten that distance: connected breeding data 
-     and analysis pipelines that do not need a bioinformatician standing 
-     beside them."
+  - >-
+    We shorten that distance. We are the bioinformatics group at Agriculture and
+    Agri-Food Canada’s Brandon Research and Development Centre. We support
+    breeders and research scientists with genomics and computational biology,
+    and we build connected breeding data and analysis pipelines that do not
+    need a bioinformatician standing beside them.
 
-  - "Weather is getting less predictable faster than variety development 
-     cycles can absorb, and the crops going into the ground now have to 
-     survive conditions nobody bred them for. Breeding is how agriculture 
-     adapts. Our job is to remove whatever is slowing it down."
+  - >-
+    Weather is getting less predictable faster than variety development cycles
+    can absorb, and the crops going into the ground now have to survive
+    conditions nobody bred them for. Breeding is how agriculture adapts. Our
+    job is to remove whatever is slowing it down.
 
-  - "These bottlenecks (i.e., disconnected data, unclear marker–trait 
-     relationships, analysis queued behind one person) recur across wheat, 
-     barley, oat, canola and pulses, and therefore we build tools that travel
-     across crop-types."
+  - >-
+    These bottlenecks (i.e., disconnected data, unclear marker–trait
+    relationships, analysis queued behind one person) recur across wheat,
+    barley, oat, canola and pulses, and therefore we build tools that travel
+    across crop-types.
 
-  - "The lab is led by [Tayab Soomro](about.qmd). Most of what we build is
-     [released openly](software.qmd)."
+  - >-
+    The lab is led by [Tayab Soomro](about.qmd). Most of what we build is
+    [released openly](software.qmd).
 
 # ── Recent news block ────────────────────────────────────────────
 news:
@@ -54,5 +57,6 @@ contact:
     - "2701 Grand Valley Road, P.O. Box 1000A"
     - "Brandon, Manitoba, R7A 5Y3"
   email: "tayab.soomro@agr.gc.ca"
-  note: "Students, collaborators and breeding programs with a data problem:
-         see [Work with us](join.qmd)."
+  note: >-
+    Students, collaborators and breeding programs with a data problem: see
+    [Work with us](join.qmd).
