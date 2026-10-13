@@ -114,6 +114,7 @@ list_posts <- function(dir = "blog/posts") {
   posts <- lapply(files, function(f) {
     fm <- read_front_matter(f)
     if (is.null(fm$title) || is.null(fm$date)) return(NULL)
+    if (isTRUE(fm$draft)) return(NULL)   # drafts never reach the public site
     list(
       title       = fm$title,
       date        = as.Date(as.character(fm$date)),

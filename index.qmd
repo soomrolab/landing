@@ -27,7 +27,7 @@ if (isTRUE(home$news$show)) {
   }
 }
 
-if (isTRUE(home$posts$show)) {
+if (isTRUE(home$posts$show) && length(list_posts())) {   # hidden when every post is a draft
   rule()
   eyebrow(home$posts$heading %||% "From the blog")
   posts_block(n = home$posts$count %||% 3)

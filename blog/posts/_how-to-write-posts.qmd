@@ -25,6 +25,12 @@ That is the whole workflow. The blog page picks it up, sorts by date,
 generates the RSS feed, and turns `categories` into filter buttons. The three
 most recent posts also appear on the home page.
 
+## Keeping a post private while you work on it
+
+Add `draft: true` to the front matter. The post stays in this folder and is
+visible in `quarto preview`, but it is not rendered into the public site, the
+blog listing, the home page or the RSS feed. Delete the line to publish it.
+
 Filenames do not matter — dating them just keeps the folder readable. Posts
 with no R code can be saved as `.md` and render faster. Shared defaults
 (author, date format) live in `_metadata.yml` next to this file.

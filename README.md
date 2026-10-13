@@ -146,6 +146,7 @@ images/
 _quarto.yml          site title, navigation, footer, social links
 theme.scss           colours and fonts
 _helpers.R           machinery — turns the YAML into pages
+_post-render.R       machinery — removes the blank pages Quarto leaves for drafts
 *.qmd                machinery — you should not need to open these
 docs/                generated output — never edit by hand
 CNAME                the custom domain
@@ -254,6 +255,11 @@ The blog page picks it up automatically, sorts by date, generates the RSS feed,
 and turns `categories` into filter buttons. The three most recent posts also
 appear on the home page. Files starting with `_` never publish — that is how
 `_how-to-write-posts.qmd` stays out of the site.
+
+**Drafts.** Add `draft: true` to the front matter while a post is still being
+written. The file stays in `blog/posts/` and shows up in `quarto preview`, but
+it is left out of the rendered site, the blog listing, the home page, the RSS
+feed and the sitemap. Remove the line when the post is ready to go public.
 
 Then, as always:
 

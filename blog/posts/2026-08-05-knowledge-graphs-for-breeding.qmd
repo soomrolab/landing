@@ -3,12 +3,8 @@ title: "Breeding data is a graph. We should probably store it that way."
 date: 2026-08-05
 description: "Why pedigree, genotype, phenotype and environment belong in one queryable structure — and what that unlocks."
 categories: [breeding informatics, knowledge graphs]
+draft: true
 ---
-
-::: {.panel}
-**Draft.** This post was assembled from an internal memo and has not been
-reviewed for public release. Edit or delete it before publishing the site.
-:::
 
 In most breeding programs, information lives in disconnected systems.
 Pedigrees sit in one database, genotypes in another, field notes in

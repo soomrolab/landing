@@ -9,11 +9,13 @@ project:
   resources:
     - CNAME                 # keeps the custom domain alive across re-renders
     - images/               # headshots are referenced from raw HTML
+  post-render: _post-render.R   # deletes the empty pages Quarto leaves for drafts
 
 website:
   title: "Soomro Lab"
   description: "Bioinformatics for plant breeding at Agriculture and Agri-Food Canada's Brandon Research and Development Centre."
   site-url: https://soomrolab.com
+  draft-mode: gone          # posts with `draft: true` are not rendered, listed or fed
   favicon: images/favicon.png
   open-graph:
     image: images/og-image.png
