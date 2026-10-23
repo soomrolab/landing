@@ -21,6 +21,7 @@ people_block(group = "pi")
 if (has("member")) {
   eyebrow(cfg$members_heading %||% "Team")
   people_block(group = "member")
+  emit(cfg$team_note)
 }
 
 if (has("alumni")) {

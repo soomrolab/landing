@@ -6,8 +6,8 @@ title: "Software"
 
 intro:
   - >-
-    These are tools the lab has released for public use. Anyone can install
-    and run them.
+    These are tools we have released publicly. They are free to install and
+    run.
   - >-
     We also maintain pipelines for breeding programs at Brandon that are not
     public. They stay inside the centre because they are connected to program
@@ -29,7 +29,7 @@ tools:
       It ships with a web interface so the person running the sample does
       not need a terminal.
     links:
-      GitHub: "https://github.com/tayabsoomro/nanoCAS.git"
+      GitHub: "https://github.com/tayabsoomro/nanoCAS"
 
 pipelines_heading: "Internal pipelines"
 pipelines:
@@ -38,10 +38,9 @@ pipelines:
     status: "In production at BRDC"
     body: |
       A genomic selection pipeline that any member of the barley breeding
-      program can run with minimal training. The point of the design was
-      that it should not require a bioinformatician to operate.
+      program can run without a bioinformatician. That was the design
+      constraint.
 
 closing:
   - >-
-    We are happy to work with you to develop pipelines and tools for your
-    program. Please get in touch if you would like to collaborate.
+    If your program needs a pipeline or tool, get in touch.

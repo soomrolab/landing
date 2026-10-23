@@ -1,5 +1,5 @@
 ---
-title: "Join the lab"
+title: "Work with us"
 ---
 
 <!-- Machinery. Edit _content/join.yml instead of this file. -->
@@ -16,5 +16,6 @@ join <- read_data("join.yml")
 emit(join$intro)
 sections_block(join$sections)
 panel_block(join$panel)
-emit(join$closing)
+rule()
+emit(join$next_steps)
 ```

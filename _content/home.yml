@@ -18,19 +18,24 @@ intro:
     need a bioinformatician standing beside them.
 
   - >-
+    Two current examples: a genomic selection pipeline now run by the barley
+    breeding program itself, and nanoCAS, a real-time nanopore diagnostic built
+    for the field.
+
+  - >-
     Weather is getting less predictable faster than variety development cycles
     can absorb, and the crops going into the ground now have to survive
     conditions nobody bred them for. Breeding is how agriculture adapts. Our
     job is to remove whatever is slowing it down.
 
   - >-
-    These bottlenecks (i.e., disconnected data, unclear marker–trait
+    These bottlenecks (e.g., disconnected data, unclear marker–trait
     relationships, analysis queued behind one person) recur across wheat,
-    barley, oat, canola and pulses, and therefore we build tools that travel
-    across crop-types.
+    barley, oat, canola and pulses, so we build tools that work across crop
+    types.
 
   - >-
-    The lab is led by [Tayab Soomro](about.qmd). Most of what we build is
+    The lab is led by [Tayab Soomro](about.qmd), and most of what we build is
     [released openly](software.qmd).
 
 # ── Recent news block ────────────────────────────────────────────
@@ -58,5 +63,5 @@ contact:
     - "Brandon, Manitoba, R7A 5Y3"
   email: "tayab.soomro@agr.gc.ca"
   note: >-
-    Students, collaborators and breeding programs with a data problem: see
+    Students, collaborators and breeders with a data problem: see
     [Work with us](join.qmd).

@@ -18,7 +18,7 @@ that were entered slightly differently in each system, reconcile, repeat.
 It is doable. It is also expensive enough that most questions of that shape
 simply never get asked, which is the real cost.
 
-## Modelling the relationships instead of the tables
+## Modeling the relationships instead of the tables
 
 A knowledge graph takes a different starting point. Rather than storing
 tables and joining them later, you model the entities that actually exist in
@@ -36,7 +36,7 @@ A few groups have already built interfaces worth clicking through:
 
 - [Helium](https://helium.hutton.ac.uk/#/), James Hutton Institute
 - [PERSEUS](https://bioinformatics.cragenomica.es/perseus/home), CRAG
-- [SoyPedi](https://tgil.donga.ac.kr/SoyPedi/index.html), a digitised
+- [SoyPedi](https://tgil.donga.ac.kr/SoyPedi/index.html), a digitized
   soybean pedigree interface
 
 Helium and PERSEUS both let you pan around a crop pedigree and colour it by

@@ -12,7 +12,7 @@ sections:
     body: |
       We take undergraduate co-op students, summer students and honours project
       students, and co-supervise graduate students with university supervisors.
-      Past projects have included pedigree visualisation, genomic selection
+      Recent projects include pedigree visualization, genomic selection
       pipelines and real-time nanopore analysis.
 
       The problems are a blend of mathematics, software engineering and genomics. You should have a background in either life sciences, computer science or mathematics, and be willing to work across the other two.
@@ -37,11 +37,12 @@ panel:
   body: |
     Email [tayab.soomro@agr.gc.ca](mailto:tayab.soomro@agr.gc.ca). For student
     enquiries, say what you want to work on and roughly when you are available.
-    A CV is important for student applications because it helps us understand
-    your background and potential.
+    Include a CV with student enquiries.
 
     For project enquiries, one paragraph about the question and one about the
     available data are enough to get started.
 
-closing:
-  - ""
+next_steps:
+  - >-
+    **What happens next.** We read every enquiry. If there is a fit, we will
+    suggest a short conversation about the question, the data and timing.

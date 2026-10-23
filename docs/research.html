@@ -199,12 +199,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-anchor-id="connected-breeding-data">Connected breeding data</h2>
 <p>In most breeding programs information lives in disconnected systems: pedigrees in one database, genotypes in another, field notes in spreadsheets, environmental data somewhere else again. Any question spanning two of them becomes a manual joining exercise, which means most such questions never get asked.</p>
 <p>We model breeding data as a graph instead — lines, parents, markers, haplotypes, environments and traits as entities, with the relationships between them stored explicitly and queried directly. That turns <em>which high-yielding lines carry this haplotype while still retaining diversity from the rest of the program?</em> into a query rather than a week of work.</p>
-<p>The first application is pedigree visualisation for wheat: panning through a crop pedigree coloured by trait, so you can see how a trait moves through a set of crosses, overlay KASP marker calls, and check whether a marker is genuinely driving the phenotype or merely travelling near it. Further out, the same integrated data is the groundwork for a digital twin of a breeding program — a model connecting genomics, pedigree, environment and field performance well enough to evaluate candidate crosses before growing them out.</p>
+<p>The first application is pedigree visualization for wheat: panning through a crop pedigree coloured by trait, so you can see how a trait moves through a set of crosses, overlay KASP marker calls, and check whether a marker is genuinely driving the phenotype or merely travelling near it. Further out, the same integrated data is the groundwork for a digital twin of a breeding program — a model connecting genomics, pedigree, environment and field performance well enough to evaluate candidate crosses before growing them out.</p>
 </section>
 <section id="diagnostics-that-run-where-the-crop-is" class="level2">
 <h2 data-anchor-id="diagnostics-that-run-where-the-crop-is">Diagnostics that run where the crop is</h2>
 <p>Conventional pathogen testing means shipping a sample to a lab and waiting days for an answer. By the time it arrives the decision has usually been made without it, often as a broad fungicide application.</p>
-<p>We work on collapsing that loop with portable nanopore sequencing. <strong>nanoCAS</strong> is an event-driven framework that watches a sequencing run as it happens and makes detection calls in real time, rather than waiting for the run to finish and the analysis to be queued. Paired with the Mk1C, that puts a sequencing-grade diagnostic in a truck.</p>
+<p>We work on closing that loop with portable nanopore sequencing. <strong>nanoCAS</strong> is an event-driven framework that watches a sequencing run as it happens and makes detection calls in real time, rather than waiting for the run to finish and the analysis to be queued. Paired with the Mk1C, that puts a sequencing-grade diagnostic in a truck.</p>
 <p>Targets so far span plant and animal systems: <em>Sclerotinia sclerotiorum</em> in canola, <em>Xylella fastidiosa</em> in grapevine, <em>Brucella abortus</em> in cattle and <em>Mycoplasma ovipneumoniae</em> in sheep.</p>
 </section>
 <section id="trait-discovery-and-population-genomics" class="level2">
@@ -214,15 +214,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="pipelines-people-can-run-without-us" class="level2">
 <h2 data-anchor-id="pipelines-people-can-run-without-us">Pipelines people can run without us</h2>
-<p>A bioinformatics group becomes a bottleneck the moment every analysis has to pass through it. So a standing goal is to build pipelines that are atomic, independently runnable and documented well enough that someone can pick one up without handholding.</p>
-<p>The working proof is a genomic selection pipeline that any member of the barley breeding program can now run with minimal training. The same approach is being extended across the Brandon and Morden bioinformatics groups so that discrete, well-specified tasks can move to whoever has capacity — and so that routine analysis stops competing with new work for the same hours.</p>
+<p>A bioinformatics group becomes a bottleneck the moment every analysis has to pass through it. So a standing goal is to build pipelines that are self-contained, independently runnable and documented well enough that someone can pick one up without handholding.</p>
+<p>The working proof is a genomic selection pipeline that any member of the barley breeding program can now run themselves. The same approach is being extended across the Brandon and Morden bioinformatics groups so that discrete, well-specified tasks can move to whoever has capacity — and so that routine analysis stops competing with new work for the same hours.</p>
 <hr>
 <p><span class="eyebrow">Software</span></p>
 <ul>
-<li><strong><a href="https://github.com/tayabsoomro">nanoCAS</a></strong> — event-driven framework for real-time detection during nanopore sequencing</li>
+<li><strong><a href="https://github.com/tayabsoomro/nanoCAS">nanoCAS</a></strong> — event-driven framework for real-time detection during nanopore sequencing</li>
 <li><strong><a href="https://github.com/coadunate/MICAS">MICAS</a></strong> — MinION classification and alerting system</li>
 <li><strong><a href="https://github.com/genoassist/genoassist">genoassist</a></strong> — genome assembly and annotation framework that compares assemblies so you can pick the best one</li>
-<li><strong><a href="https://github.com/tayabsoomro">BiocSwirl</a></strong> — interactive R/Bioconductor courses for teaching bioinformatics workflows</li>
+<li><strong><a href="https://github.com/biocswirl-dev-team/BiocSwirl">BiocSwirl</a></strong> — interactive R/Bioconductor courses for teaching bioinformatics workflows</li>
 </ul>
 
 
@@ -634,7 +634,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Soomro Lab · <a href="https://agriculture.canada.ca/en/science/agriculture-and-agri-food-research-centres/brandon-research-and-development-centre">Brandon Research and Development Centre</a> · Agriculture and Agri-Food Canada</p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="./news.html">News</a> · <a href="./about.html">Tayab Soomro</a> · <a href="blog/index.xml">RSS</a></p>
+<p><a href="./news.html">News</a> · <a href="./about.html">Tayab Soomro</a> · <a href="./blog/index.xml">RSS</a></p>
 </div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org">Quarto</a></p>

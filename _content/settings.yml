@@ -10,11 +10,14 @@ publications:
     - "Soomro T"
 
 people:
-  title: "People"
+  title: "Team"
   pi_heading: "Lead"
   members_heading: "Team"
   alumni_heading: "Alumni"
   collaborators_heading: "Collaborators"
+  team_note:
+    - "FSWEP is the Federal Student Work Experience Program. We also take co-op,
+       summer and honours students; see [Work with us](join.qmd)."
   collaborators_intro:
     - "People we work with regularly."
 
